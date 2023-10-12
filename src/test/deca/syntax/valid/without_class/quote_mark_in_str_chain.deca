@@ -1,0 +1,12 @@
+// Description :
+//    test de la détection de guillemets dans une chaîne de caractère
+//
+// Resultats :
+//    ok
+//
+// Historique:
+//    cree le 06/01/2023
+
+{
+    print("Vive \"Deca\"");
+}

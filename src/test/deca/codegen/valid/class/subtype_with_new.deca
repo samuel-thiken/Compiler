@@ -1,0 +1,21 @@
+/// Description:
+// 	  Crée un objet avec un cast (wow)
+//
+// Resultats:
+//  4
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    int x;
+    void setX(int x) {
+        this.x = x;
+    }
+}
+class B extends A {}
+
+{
+    A obj = new B(); // ok as B is a subtype of A
+    obj.setX(4);
+    println(obj.x);
+}

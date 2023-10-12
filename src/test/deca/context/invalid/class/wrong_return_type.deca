@@ -1,0 +1,21 @@
+// Description:
+// 	  use new declaration in a method of an undefined type 
+//
+// Resultats:
+// 	INVALID_CAST: Type int cannot be cast to type boolean
+//  line 15
+// Historique:
+// 	  cree le 15/01/2023
+
+class B {
+    
+    protected float x;
+    void methodA() {}
+    boolean methodB() {
+        return 2;
+    }
+}
+{
+    B objectB = new B();
+    int x = objectB.methodB();
+}

@@ -1,0 +1,19 @@
+// Description:
+//    Test fibonacci
+//
+// Resultats:
+// 	  Premiers 10 termes de la suite de Fibonacci : 0,1,1,2,3,5,8,13,21,34,
+// Historique:
+//    cree le 14/01/2023
+{
+    int n = 10, t1 = 0, t2 = 1, i = 1, somme;
+    print("Premiers ", n, " termes de la suite de Fibonacci : ");
+
+    while (i <= n) {
+        print(t1, ",");
+        somme = t1 + t2;
+        t1 = t2;
+        t2 = somme;
+        i = i + 1;
+    }
+}

@@ -1,0 +1,11 @@
+/// Description:
+// 	  test syntax error when underflow occurs on a float
+//
+// Resultats:
+// 	  Error Syntax
+//    line 10
+// Historique:
+// 	  cree le 19/01/2023
+{
+    int 6entier = 0;
+}

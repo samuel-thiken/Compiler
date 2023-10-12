@@ -1,0 +1,22 @@
+// Description:
+// 	  Testing a cast with a void type
+//
+// Resultats:
+// 	INVALID_CAST: Type B cannot be cast to type void
+//  line 21
+// Historique:
+// 	  cree le 15/01/2023
+
+class A {
+
+}
+
+class B extends A {
+
+}
+
+{
+    A object1 = new A();
+    B object2 = new B();
+    object1 = (void) (object2);
+}

@@ -1,0 +1,256 @@
+/// Description:
+// 	  test cast between multiple class heritage
+//
+// Resultats:
+//  I'm Vehicule, speed:1.90000e+01
+//         My position: 2.38000e+01 : 2.90000e+00
+//  I'm Car, nbPlace:5
+//         My position: 5.38000e+01 : 5.40000e+00
+//  I'm Truck, I'm full
+//         My position: 5.62000e+01 : 5.60000e+00
+//  I'm race car, acceleration:1.92308e-01
+//         My position: 2.46200e+02 : 2.46000e+01
+//  I'm a Formula1, max speed:3.76000e+02
+//         My position: 9.17800e+02 : 9.17600e+01
+//  I'm Rally car, rally of type:8
+//         My position: 1.06130e+03 : 1.06110e+02
+//
+// Historique:
+// 	  cree le 20/01/2023
+
+class Position {
+    float x;
+    float y;
+
+    float getX() { return this.x; }
+    float getY() { return this.y; }
+    void setX(float x) { this.x = x; }
+    void setY(float y) { this.y = y; } 
+    
+    void affichePosition() {
+        println(this.x, " : ", this.y);
+    }
+
+}
+
+class Vehicule {
+    protected int puissance;
+    protected int weight;
+    protected float speed;
+    protected Position pos;
+
+    Position getPosition() { return this.pos; }
+    void setPosition(Position pos) { this.pos = pos; }
+
+    void setPuissance(int i) {
+        this.puissance = i;
+    }
+
+    void setWeight(int i) {
+        this.weight = i;
+    }
+
+    int getPuissance() {
+        return this.puissance;
+    }
+
+    int getWeight() {
+        return this.weight;
+    }
+
+    void setSpeed() { this.speed = this.getPuissance() / (this.getWeight() / 1000); }
+
+    float getSpeed() {
+        return this.getPuissance() / (this.getWeight() / 100 );
+    }
+
+    void printVehiculeCaracteristics() {
+        println("I'm Vehicule, speed:", this.getSpeed());
+        print("       My position: ");
+        this.pos.affichePosition();
+    }
+
+    void move() {
+        this.pos.x = this.pos.x + 1.2*this.getSpeed();
+        this.pos.y = this.pos.y + (this.getSpeed() / 10);        
+    }
+}
+
+class Car extends Vehicule {
+    protected int nbPlace;
+
+    void setNbPlace(int i) {
+        this.nbPlace = i;
+    }
+
+    int getNbPlace() {
+        return this.nbPlace;
+    }
+
+    void printVehiculeCaracteristics() {
+        println("I'm Car, nbPlace:", this.getNbPlace());
+        print("       My position: ");
+        this.pos.affichePosition();
+    }
+}
+
+class Truck extends Vehicule {
+    protected boolean merchandiseDangerous;
+    protected boolean isFull;
+
+    void setIsFull(boolean i) {
+        this.isFull = i;
+    }
+
+    boolean getIsFull() {
+        return this.isFull;
+    }
+
+    void setMerchandiseDangerous(boolean i) {
+        this.merchandiseDangerous = i;
+    }
+
+    boolean getMerchandiseDangerous() {
+        return this.merchandiseDangerous;
+    }
+
+    void printVehiculeCaracteristics() {
+        print("I'm Truck");
+        if (this.isFull) {
+            println(", I'm full");
+        }
+        print("       My position: ");
+        this.pos.affichePosition();
+    }
+}
+
+class RaceCar extends Car {
+    protected float acceleration;
+
+    void setAcceleration(float i) {
+        this.acceleration = i;
+    }
+
+    float getAcceleration() {
+        return this.acceleration;
+    }
+
+    void printVehiculeCaracteristics() {
+        println("I'm race car, acceleration:", this.getSpeed()*this.getAcceleration()/this.getWeight());
+        print("       My position: ");
+        this.pos.affichePosition();
+    }
+
+    void move() {    
+        this.pos.x = this.pos.x + this.getAcceleration() * this.getSpeed();
+        this.pos.y = this.pos.y + this.getAcceleration() * (this.getSpeed() / 10);        
+    }
+}
+
+class F1 extends RaceCar {
+    protected float maxSpeed;
+
+    void setMaxSpeed(float i) {
+        this.maxSpeed = i;
+    }
+
+    float getMaxSpeed() {
+        return this.maxSpeed;
+    }
+
+    void printVehiculeCaracteristics() {
+        println("I'm a Formula1, max speed:", this.getMaxSpeed());
+        print("       My position: ");
+        this.pos.affichePosition();
+    }
+}
+
+class Rally extends RaceCar {
+    protected int typeRace;
+
+    void setTypeRace(int i) {
+        this.typeRace = i;
+    }
+
+    int getTypeRace() {
+        return this.typeRace;
+    }
+
+    void printVehiculeCaracteristics() {
+        println("I'm Rally car, rally of type:", this.getTypeRace());
+        print("       My position: ");
+        this.pos.affichePosition();
+    }
+}
+
+// ==================================== Main ========================================== //
+
+{   
+    int nb_objet = 6;
+    int s1 = 0;
+    int s2 = 0;
+    int s3 = 0;
+    int s4 = 0;
+    int s5 = 0;
+    int s6 = 0;
+
+    Vehicule vehicule = new Vehicule();
+    Car car = new Car();
+    Truck truck = new Truck();
+    RaceCar carRace = new RaceCar();
+    F1 f1 = new F1();
+    Rally rally = new Rally();
+    Position posDepart = new Position();
+    posDepart.setX(1);
+    posDepart.setY(1);
+
+    // Initialization of objects
+
+    vehicule.setPuissance(233);
+    vehicule.setWeight(1200);
+    vehicule.setPosition(posDepart);
+    vehicule.move();
+    vehicule.printVehiculeCaracteristics();
+
+    car.setNbPlace(5);
+    car.setPuissance(350);
+    car.setWeight(1455);
+    car.setPosition(posDepart);
+    car.move();
+    car.printVehiculeCaracteristics();  
+
+    truck.setIsFull(true);
+    truck.setPuissance(450);
+    truck.setWeight(22455);
+    truck.setPosition(posDepart);
+    truck.move();
+    truck.printVehiculeCaracteristics();
+
+    carRace.setWeight(988);
+    carRace.setPuissance(458);
+    carRace.setAcceleration(3.8);
+    carRace.setPosition(posDepart);
+    carRace.move();
+    carRace.printVehiculeCaracteristics();
+
+    f1.setWeight(690);
+    f1.setPuissance(880);
+    f1.setAcceleration(4.6);
+    f1.setMaxSpeed(376);
+    f1.setPosition(posDepart);
+    f1.move();
+    f1.printVehiculeCaracteristics();
+
+    rally.setTypeRace(8);
+    rally.setWeight(1105);
+    rally.setPuissance(388);
+    rally.setAcceleration(4.1);
+    rally.setPosition(posDepart);
+    rally.move();
+    rally.printVehiculeCaracteristics();
+
+    // Cast of objects --> A faire si on veut tester des casts
+
+
+}
+

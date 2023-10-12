@@ -1,0 +1,19 @@
+// Description:
+// 	  Test instanceof du sujet
+// 	
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 18/01/2023
+class A { }
+class B extends A { }
+class C extends B { }
+{
+    A a;
+    B b;
+    a = new C();
+    if (a instanceof B) {
+        b = (B)(a);
+        println("ok");
+    }
+}

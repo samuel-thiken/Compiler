@@ -1,0 +1,29 @@
+//// Description:
+// 	  using protected field in main 
+// 	
+// Resultats:
+// 	  CANNOT_ACCESS_PROTECTED_FIELD: The protected field i cannot be accessed from main
+//    line 26
+// Historique:
+// 	  cree le 21/01/2023
+
+class A {
+
+    protected int i;
+
+    int method1 (int i) {
+        return i;
+    }
+
+    void set(int i) {this.i = i; }
+
+
+}
+
+{
+    A a = new A();
+    a.set(8);
+    print( a.method1(a.i) );
+
+
+}

@@ -1,0 +1,15 @@
+// Description:
+//    Error using multiline comment   
+//
+// Result:
+//    Syntax Error
+//    line 9
+
+{
+     This should be 
+        a multiline comment 
+    */
+
+    int x = 0;
+    return x; // */ expected before cbrace 
+}

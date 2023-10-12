@@ -1,0 +1,13 @@
+// Description:
+// 	  Teste l'overflow pour la multiplication entre deux entiers
+//
+// Resultats:
+//  Number overflow
+//  line 12
+// Historique:
+// 	  cree le 13/01/2023
+{
+    int x = 2147483647;
+    int y = 2147483647;
+    int z = x * y;
+}

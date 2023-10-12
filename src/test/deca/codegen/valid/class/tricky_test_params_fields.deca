@@ -1,0 +1,26 @@
+/// Description:
+// 	  A test in which a method has the same name parameters as each field in the class
+// 	
+// Resultats:
+// 	  6.00000
+// Historique:
+// 	  cree le 19/01/2023
+
+class A {
+    int a = 1;
+    int b = 2;
+    int c = 3;
+    
+    int Weird_Method(float a, float b, float c) {
+        a = (int) (a); // param a = (int) param a
+        b = (int) (b); // param b = (int) param b
+        c = (int) (c); // param c = (int) param c
+        return (int) (a * b * c);
+    }
+}
+
+{
+    A obj = new A();
+    float float = 3.0000000f;
+    print(obj.Weird_Method(1.0, 2.0, float));
+}

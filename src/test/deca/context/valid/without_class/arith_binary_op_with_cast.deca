@@ -1,0 +1,32 @@
+// Description:
+//    Teste tous les types d'opérateurs binaires avec des variables de type différent
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 07/01/2023
+// 
+{
+    int i= 8;
+    float f = 2.0;
+    float x = 3.0;
+
+    //addition float 
+
+    float res = i + f;
+    float ress = res + 1;
+
+    float answ = i - f;
+    float answw = 9.0 - i;
+    
+    //multiplication
+    float g = i * f; 
+    float h = i * i;
+
+    //division
+    int j = i / 4;
+    float k = i / f;
+    float q = 3 / 4; 
+
+}

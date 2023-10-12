@@ -1,0 +1,16 @@
+/// Description:
+// 	  simple syntax for classes declaration
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 13/01/2023
+
+class A {
+    int x;
+    void f() {}
+    protected boolean b;
+}
+
+class B extends A {
+    void g() {}
+}

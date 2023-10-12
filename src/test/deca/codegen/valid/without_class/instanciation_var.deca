@@ -1,0 +1,23 @@
+// Description:
+//    Teste tous les types d'instanciation
+//
+// Resultats:
+//    my_bool_2 : true / my_int : 45048353 / my_float : -5.70500e-11
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    boolean my_bool_1, my_bool_2 = true;
+    int my_int = 45048353;
+    float my_float = -0.5705e-10;
+    if (my_bool_2 == true) {
+        print("my_bool_2 : true");
+    }
+    else {
+        print("my_bool_2 : false");
+    }
+    print(" / ");
+    print("my_int : ", my_int);
+    print(" / ");
+    print("my_float : ", my_float);
+}

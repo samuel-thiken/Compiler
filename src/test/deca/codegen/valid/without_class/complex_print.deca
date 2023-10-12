@@ -1,0 +1,21 @@
+// Description:
+//    Déclarations et initialisations et affichages complexes d'expressions (test de base pour l'opération C)
+//
+// Resultats:
+//    -1 / 1 / a : 64 / d : 0x1.555556p+0
+//
+// Historique:
+//    cree le 14/01/2023
+{   
+    int val;
+    int a = 1;
+    float d = 4.0;
+    val = -1;
+    print(val);
+    print(" / ");
+    print(-1 * 8 + 9);
+    print(" / ");
+    print("a : ", a * 56 - (-8));
+    print(" / ");
+    printlnx("d : ", d/3);
+}

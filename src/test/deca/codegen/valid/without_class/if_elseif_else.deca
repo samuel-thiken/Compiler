@@ -1,0 +1,18 @@
+// Description :
+//    test de la syntaxe du return
+//
+// Resultats:
+//    dans le else
+//
+// Historique:
+//    cree le 08/01/2023
+{
+    int my_int = 13;
+    if (my_int % 3 == 0) {
+        print("dans le if");
+    } else if (my_int + 1 == 2) {
+        print("dans le else if");
+    } else {
+        print("dans le else");
+    }
+}

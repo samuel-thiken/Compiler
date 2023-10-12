@@ -1,0 +1,10 @@
+//Description:
+//     Error : undefined type class in main block
+//
+// Result:
+//    UNDEFINED_TYPE: Type \(.\)\+ is undefined
+//    line 9
+
+{
+    objectA a = new objectA();
+}

@@ -1,0 +1,13 @@
+// Description:
+// 	  Teste la division par 0
+//
+// Resultats:
+//  Division by zero 
+//  line 12	  
+// Historique:
+// 	  cree le 13/01/2023
+{
+    int x = 1;
+    int y = 0;
+    int z = x / y;
+}

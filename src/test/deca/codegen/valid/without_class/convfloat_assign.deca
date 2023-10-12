@@ -1,0 +1,13 @@
+// Description:
+//    Teste l'assignation int vers float
+//
+// Result:
+//    0.00000e+00
+//
+// Historique:
+//    cree le 13/01/2023
+{
+    float t;
+    t = 0;
+    print(t);
+}

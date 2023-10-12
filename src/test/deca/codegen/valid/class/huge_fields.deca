@@ -1,0 +1,45 @@
+/// Description:
+// 	  Method with many parameters
+// 	
+// Resultats:
+// 	  25
+// Historique:
+// 	  cree le 19/01/2023
+
+class ManyParams {
+    int un = 1;
+    int deux = 1; 
+    int trois = 1; 
+    int quatre = 1; 
+    int cinq = 1; 
+    int six = 1; 
+    int sept = 1; 
+    int huit = 1; 
+    int neuf = 1; 
+    int dix = 1; 
+    int onze = 1; 
+    int douze = 1; 
+    int treize = 1;
+    int quatorze = 1; 
+    int quinze = 1; 
+    int seize = 1; 
+    int dixsept = 1; 
+    int dixhuit = 1; 
+    int dixneuf = 1; 
+    int vingt = 1; 
+    int vingtetun = 1; 
+    int vingtdeux = 1; 
+    int vingttrois = 1; 
+    int vingtquatre = 1;
+    int vingtcinq = 1; 
+    
+    int sumFields()
+    {
+        return un + deux+ trois+ quatre+ cinq+ six+ sept+ huit+ neuf+ dix+ onze+ douze+ treize+quatorze+ quinze+ seize+ dixsept+ dixhuit+ dixneuf+ vingt+ vingtetun+ vingtdeux+ vingttrois+vingtquatre+vingtcinq;
+    }
+}
+
+{
+    ManyParams m = new ManyParams();
+    print(m.sumFields());
+}

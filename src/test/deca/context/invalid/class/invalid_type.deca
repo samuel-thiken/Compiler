@@ -1,0 +1,11 @@
+// Description:
+// 	  Test d'utilisation de void comme un type
+// 	
+// Resultats:
+// 	  VOID_FIELD_NOT_ALLOWED: Field x cannot be of type void
+//  line 10
+// Historique:
+// 	  cree le /01/2023
+class A {
+    void x;
+}

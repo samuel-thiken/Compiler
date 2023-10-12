@@ -1,0 +1,30 @@
+// Description:
+//    Teste tous les types d'opérateurs binaires arithmétiques
+//
+// Result:
+//   
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    //addition
+    int a = 1 + 2;
+    int b = 3 + a;
+    
+    //soustraction
+    int c = 3;
+    int d = 2 - c;
+    float e = 2.0 - 8.0;
+
+    //multiplication
+    float mult = 3.0 * 2.0;
+    float mult_2 = e * d;
+
+    //division
+    float div = 3.0 / 3.0;
+    int div_2 = c / d;
+
+    //modulo;
+    int modulo;
+    modulo = 3 % 2;
+}

@@ -1,0 +1,37 @@
+/// Description:
+// 	  Test for all sorts of casts between integers and floats inside a class & test of method visibility
+// 	
+// Resultats:
+// 	  4.00000 / 4.00000
+// Historique:
+// 	  cree le 19/01/2023
+
+class A {
+    int a = -38 + (int) (8 - 42*5 + 1);
+    float my_float = a + 6; //convfloat 
+    int lotOfCasts(float f, int i) {
+        f = i; //convfloat
+        this.a = (int) (f + 0.4f * (0.0001e4 -1)); //explicit cast of an expression
+        return (int) (f);
+    }
+}
+
+class B extends A {
+    void printMethod() {
+        print(lotOfCasts(13.4580, 48));
+    }
+}
+
+class C {
+    void printMethod(A objA) {
+        print(objA.lotOfCasts(230.45, 1));
+    }
+}
+
+{
+    A objA = new A();
+    float f = objA.lotOfCasts(3.8, 4);
+    print(objA.a);
+    print(" / ");
+    print(f);
+}

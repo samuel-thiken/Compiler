@@ -1,0 +1,26 @@
+// Description:
+// 	  Appelle une méthode avec un enfant au lieu de la "bonne" classe
+// 	
+// Resultats:
+// 	  Ok
+// Historique:
+// 	  cree le /01/2023
+class A {
+    int x;
+    void setA(int x) {
+        this.x = x;
+    }
+}
+class B extends A {}
+
+class C {
+    void setC(A a) {
+        a.setA(1);
+    }
+}
+
+{
+    B b = new B();
+    C c = new C();
+    c.setC(b);
+}

@@ -1,0 +1,19 @@
+// Description:
+//    Error usign control structure if, else, else if
+//
+// Result:
+//    mismatched input 'else' expecting
+//    line 16
+
+{
+    int i = 0;
+    if (i != 0) {
+        print("not ok");
+    }
+    else {
+        print("ok");
+    }
+    else {
+        print("Error in if else");
+    }
+}

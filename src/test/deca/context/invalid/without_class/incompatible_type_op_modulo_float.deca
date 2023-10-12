@@ -1,0 +1,15 @@
+// Description:
+//    Error : operator modulo not defined with float type
+//
+// Result:
+//    INCOMPATIBLE_TYPE_OPERATOR: Type \(.\)\+ is incompatible with type \(.\)\+ for the operator \(.\)\+
+//    line 12
+{
+    float x = 8.1;
+    int f = 2;
+
+    //modulo
+    int k = f % x;
+}
+
+    

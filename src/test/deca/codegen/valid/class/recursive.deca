@@ -1,0 +1,21 @@
+// Description:
+// 	  Appelle une fonction récursive (sans débordement de la pile)
+// 	
+// Resultats:
+// 	  120
+// Historique:
+// 	  cree le /01/2023
+class Rec {
+    int factorielle(int n) {
+        if(n == 1 || n == 0) {
+            return 1;
+        } else {
+            return n * factorielle(n-1);
+        }
+    }
+}
+
+{
+    Rec r = new Rec();
+    println(r.factorielle(5));
+}

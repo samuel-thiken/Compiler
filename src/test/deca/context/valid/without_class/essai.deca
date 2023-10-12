@@ -1,0 +1,26 @@
+// Description :
+//    test de la d'une chaine de caractere très longue 
+//
+// Resultats :
+//    ok
+//
+// Historique:
+//    cree le 18/01/2023
+
+{
+    int i;
+    float x;
+    int y = 2568888;
+    int z = 45;
+    println("Entrer un entier:");
+    i = readInt();
+    println("Entrer un reel:");    
+    x = readFloat();
+    
+    if (z % i == 0) {
+        while (i % 3 != 0) {
+            println("i n'est pas multiple de 3");
+            i = i - 1;
+        }
+    }
+}

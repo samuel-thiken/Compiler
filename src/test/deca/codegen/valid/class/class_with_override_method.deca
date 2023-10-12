@@ -1,0 +1,53 @@
+// Description:
+// 	  Création d'un getter/setter basique
+// 	
+// Resultats:
+//    1 8 9
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    
+    protected int i;
+    void setI(int a) {
+        this.i = a;
+    }
+    int getI() {
+        return this.i;
+    }
+
+    void initialize(int i) {
+        this.i = i;
+    }
+}
+
+class B extends A {
+    protected boolean b;
+    protected float x;
+
+    void initialize(int i) {
+        this.i = i;
+    }
+    
+}
+
+class C extends A {
+    protected int j;
+
+    void initialize(int i) {
+        this.i = i;
+    }
+}
+
+{
+    A objetA = new A();
+    B objetB = new B();
+    C objetC = new C();
+
+    objetA.initialize(1);
+    objetB.initialize(8);
+    objetC.initialize(9);
+
+    println(objetA.getI(), " ", objetB.getI(), " ", objetC.getI());
+
+}

@@ -1,0 +1,19 @@
+/// Description:
+// 	  Test syntax error when trying to access a protected field in an expression where the type expression isn't a subtype of the current class type.
+// 	
+// Resultats:
+// 	  CANNOT_ACCESS_PROTECTED_FIELD: The protected field x cannot be accessed from class B as A doesn't extends B
+//    line 16
+// Historique:
+// 	  cree le 16/01/2023
+
+class A {
+    protected int x;
+}
+
+class B extends A {
+    int getX(A a) {
+        return a.x; // Erreur contextuelle : le type de 'a' (A) n'est pas
+                    // un sous-type de B.
+    }
+}

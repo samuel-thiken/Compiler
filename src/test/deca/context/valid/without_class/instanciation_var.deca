@@ -1,0 +1,13 @@
+// Description:
+//    Teste tous les types d'instanciations
+//
+// Result:
+//   
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    boolean my_bool_1, my_bool_2 = true;
+    int my_int = 45048353;
+    float my_float = 0.5705e-10;
+}

@@ -1,0 +1,9 @@
+// Description:
+//    Program with missing space between type and a variable
+//
+// Result:
+//    UNDEFINED_VAR: Variable \(.\)\+ is undefined
+//    line 8
+{
+    inty = 2; //missing space declaration
+}

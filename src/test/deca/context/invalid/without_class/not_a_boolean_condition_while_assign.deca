@@ -1,0 +1,13 @@
+// Description:
+//    Error : Condition should be a boolean, can not use int type for an while
+//
+// Result:
+//    NOT_A_BOOLEAN_CONDITION: Expression \(.\)\+ is not a boolean expression
+//    line 10
+{
+    int x = 5;
+    int y = 7;
+    while (x = y) {
+        print("Should no enter in this section");
+    }
+}

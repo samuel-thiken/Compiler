@@ -1,0 +1,105 @@
+/// Description:
+// 	  Program that solve a system using LU factorisation
+// Resultats:
+// 	  1.00000e+00 / 2.00000e+00 / 3.00000e+00
+// Historique:
+// 	  cree le 19/01/2023
+
+class Tools {
+    float[] initArray(int n) {
+        float[n] newArr;
+        int i = 0;
+        while (i<n) {
+            newArr[i] = 0;
+            i = i + 1;
+        }
+        return newArr;
+    }
+}
+
+class Settings extends Tools {
+    int requiredLines = 3;
+    int requiredCol = 3;
+
+    int getRequiredLines() {
+        return requiredLines;
+    }
+
+    int getRequiredCol() {
+        return requiredCol;
+    }
+
+}
+
+class SolveSystem extends Settings {
+
+    Settings set = new Settings();
+    int systemLine = set.getRequiredLines();
+    int systemCol = set.getRequiredCol();
+    
+    float[][] A;
+    float[] b;
+
+    float[] solveLU(){
+
+        int i = 0;
+        int j = 0;
+        int k = 0;
+        int n = systemCol;
+
+        float coef;
+        float[][] B = A;
+        float[] bBis = b;
+
+        while (i < n) {
+            while (j>i+1 && j<n) {
+                if (A[i][i] == 0) {
+                    print("Pas de solution car une des sous-matrices a un déterminant nul !!!!");
+                    return {0};
+                }
+                coef = A[j][i] / A[i][i];
+
+                while (k < n) {
+                    B[j][k] = B[j][k] - coef*B[i][k];
+                    k = k + 1;
+                }
+                bBis[j] = bBis[j] - coef * bBis[i];
+                j = j + 1;
+            }
+            i = i + 1;
+        }
+
+        return finalSolution(B, bBis);
+    }
+    float[] finalSolution(float[][] A, float[] b) {
+        int n = systemCol;
+        float[] x = set.initArray(n);
+        int i = n-2;
+        int j = i + 1;
+        float sum;
+        x[n-1] = b[n-1] / A[n-1][n-1];
+
+        while (i>-1) {
+            sum = 0;
+            while (j < n) {
+                sum = sum + A[i][j] * x[j];
+                j = j + 1;
+            }
+            x[i] = (b[i] - sum)/A[i][i];
+            i = i - 1;
+        }
+        return x;
+    }
+}
+
+{
+    SolveSystem s = new SolveSystem();
+    s.A = {{2, 3, 5}, {3, 4, 1}, {6, 7, 2}};
+    s.b = {23, 14, 26};
+    /*
+    print(s.solveLU[0]);
+    print(" / ");
+    print(s.solveLU[1]);
+    print(" / ");
+    print(s.solveLU[2]);*/
+}

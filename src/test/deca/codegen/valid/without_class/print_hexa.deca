@@ -1,0 +1,11 @@
+// Description:
+// 	  Plus de print !!
+// 	
+// Resultats:
+// 	  -0x1.8p+1 -3
+// Historique:
+// 	  cree le 18/01/2023
+
+{
+    printlnx(-3.0, " ", -3);
+}

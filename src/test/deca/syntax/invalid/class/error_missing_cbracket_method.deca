@@ -1,0 +1,12 @@
+/// Description:
+// 	  Test for the missing coma in field declaration in class
+// 
+// Resultats:
+//    Syntax error
+//    line 11
+// Historique:
+// 	  cree le 18/01/2023
+class A {
+    private B b;
+    void int() }
+}

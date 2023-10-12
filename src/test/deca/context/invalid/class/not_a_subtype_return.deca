@@ -1,0 +1,24 @@
+// Description:
+// 	  Testing the contextual error associated with a void parameter inside a signature method
+//
+// Resultats:
+// 	NOT_A_SUBTYPE_RETURN: The return type of method f in class C must be the same type or a subtype of type void
+//  line 22
+// Historique:
+// 	  cree le 15/01/2023
+class A {
+    void f(int a, int b) {}
+}
+
+class B extends A {
+    void f(int a, int b) {} //ok as B is a subtype of A
+}
+
+class D {
+    D f(int a, int b) {} //ok f isn't an overriden method
+}
+
+class C extends B {
+    D f(int a, int b) {} //not okay as D isn't a subtype of A
+}
+

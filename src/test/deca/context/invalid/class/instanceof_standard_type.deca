@@ -1,0 +1,20 @@
+// Description:
+// 	  Testing instanceof with a standard type (eg: int, float)
+//
+// Resultats:
+// 	INCOMPATIBLE_INSTANCE_OF: Type float is incompatible with 'instance of'
+//  line 17
+// Historique:
+// 	  cree le 15/01/2023
+
+class A {
+
+}
+
+{
+    A objectA = new A();
+    float x = 8.0;
+    if (x instanceof A) {
+        print("Should not enter this loop");
+    }
+}

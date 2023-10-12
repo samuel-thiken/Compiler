@@ -1,0 +1,21 @@
+/// Description:
+// 	  Test of an error syntax when an invalid cast is being done in parameter of a method call
+// 	
+// Resultats:
+// 	  INVALID_CAST: Type MACLASSE cannot be cast to type float
+//    line 19
+// Historique:
+// 	  cree le 19/01/2023
+
+class MACLASSE {
+    int myMethod(float f) {
+        return 0;
+    }
+}
+
+class MACLASSE_TEST {
+    void Test() {
+        MACLASSE c = new MACLASSE();
+        print(c.myMethod( (MACLASSE) (null) ) );
+    }
+}

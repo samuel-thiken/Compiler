@@ -1,0 +1,15 @@
+// Description :
+//    Test de la syntaxe du while
+//
+// Result :
+//  
+//
+// Historique:
+//    cree le 08/01/2023
+{
+    int a = 8;
+    while (a != 3) {
+        a = a -1;
+        print("Coucou");
+    }
+}

@@ -1,0 +1,9 @@
+// Description:
+//    Error : operator equals not defined with type string
+//
+// Result:
+//    INCOMPATIBLE_TYPE_OPERATOR: Type \(.\)\+ is incompatible with type \(.\)\+ for the operator \(.\)\+
+//    line 8
+{
+    boolean result = "Bidule" <= "Hello"; 
+}

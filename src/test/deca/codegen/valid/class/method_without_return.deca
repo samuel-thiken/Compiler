@@ -1,0 +1,28 @@
+//// Description:
+// 	  composition de method  
+// 	
+// Resultats:
+// 	  8
+// Historique:
+// 	  cree le /01/2023
+
+class A {
+
+    protected int i;
+
+    int method1 (int i) {
+        this.i = i;
+    }
+
+    int getI() {return this.i;}
+
+    
+}
+
+{
+    A a = new A();
+    a.method1(8);
+    print(a.getI());
+
+
+}

@@ -1,0 +1,9 @@
+// Description:
+// 	  Testing the contextual error associated with a void parameter inside a signature method
+//
+// Resultats:
+// 	Syntax Error
+//  line 8
+class E {
+    null f(int a, int b) {} //still ok as null is a subtype of A
+}

@@ -1,0 +1,11 @@
+// Description:
+//    Test float declaration
+//
+// Result:
+//    
+//
+// Historique:
+//    cree le 12/01/2023
+{
+    float x = 3/4;
+}

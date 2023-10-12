@@ -1,0 +1,18 @@
+// Description:
+// 	  class with an attribute of non defined type  
+//
+// Resultats:
+// 	UNDEFINED_TYPE: Type A is undefined
+//  line 13
+// Historique:
+// 	  cree le 15/01/2023
+
+class B {
+
+    protected float x;
+    protected A elementA; // class A is not defined
+}
+
+{
+    B objectB = new B();
+}

@@ -1,0 +1,29 @@
+{
+    int nombreParties;
+    int a = 3875848;
+    int b = 7438462;
+    int m = 100;
+    int prixInconnu = 1;
+    int entreeUtilisateur = -1;
+
+    println("Bienvenue au juste prix !");
+    println("Veuillez entrer le nombre de parties que vous voulez faire :");
+    nombreParties = readInt();
+    while(nombreParties > 0) {
+        prixInconnu = (a * prixInconnu + b) % m;
+        while(entreeUtilisateur != prixInconnu) {
+            println("Entrez un nombre entre 1 et 100...");
+            if(entreeUtilisateur != -1) {
+                if(entreeUtilisateur < prixInconnu) {
+                    println("Plus grand !");
+                } else {
+                    println("Plus petit !");
+                }
+            }
+            entreeUtilisateur = readInt();
+        }
+        println("Bravo, le nombre était bien ", prixInconnu, " !");
+        nombreParties = nombreParties - 1;
+        entreeUtilisateur = -1;
+    }
+}

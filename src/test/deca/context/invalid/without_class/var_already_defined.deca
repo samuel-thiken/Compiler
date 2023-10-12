@@ -1,0 +1,10 @@
+// Description:
+//    Variable declared with a name already used 
+//
+// Result:
+//    ALREADY_DEFINED_VAR: Variable \(.\)\+ is already defined
+//    line 9
+{
+    int x = 0;
+    int x = 1;
+}

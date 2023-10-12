@@ -1,0 +1,14 @@
+// Description:
+//    Teste tous les types d'opérateurs binaires booléens (&&, ||, ==, !=)
+//
+// Result:
+//    
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    boolean a = true && false; //false
+    boolean b = true || false; //true
+    boolean c = a==b; //false
+    boolean d = a!=b; //true
+}

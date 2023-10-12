@@ -1,0 +1,25 @@
+// Description:
+// 	  
+// 	
+// Resultats:
+// 	  42 41
+// Historique:
+// 	  cree le /01/2023
+
+class A {
+    
+    int print42() asm("
+        LOAD #42, R1
+        WINT
+        WSTR \" \"
+        LOAD #41, R0
+        RTS
+    ");
+
+}
+
+{
+    A a = new A();
+    int res = a.print42();
+    println(res);
+}

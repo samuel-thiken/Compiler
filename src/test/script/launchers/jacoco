@@ -1,0 +1,8 @@
+#! /bin/bash
+
+DECAC_HOME=$(cd "$(dirname "$0")"/../../../../ && pwd)
+
+mvn clean
+mvn -Djacoco.skip=false verify
+firefox "$DECAC_HOME"/target/site/index.html &
+"$DECAC_HOME"/src/test/script/launchers/clean_test

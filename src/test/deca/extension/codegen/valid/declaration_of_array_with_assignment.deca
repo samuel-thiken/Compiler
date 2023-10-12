@@ -1,0 +1,10 @@
+// Description:
+// 	  Declaration of array with assignment && access
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 21/01/2023
+
+{
+    int[3] tab = {11, 17, 13};
+}

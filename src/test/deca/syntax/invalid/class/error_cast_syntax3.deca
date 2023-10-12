@@ -1,0 +1,15 @@
+/// Description:
+// 	  Test of an error with the cast syntax
+// 
+//  Resultats:
+//    Syntax Error
+//    line 14 
+class Animal {}
+class Canard extends Animal {}
+class Poulet extends Animal {}
+
+{
+    Poulet a = new Animal();
+    Canard b = new Poulet();
+    Animal random_animal = (Animal b);
+}

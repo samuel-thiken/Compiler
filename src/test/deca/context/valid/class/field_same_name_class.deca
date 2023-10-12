@@ -1,0 +1,11 @@
+/// Description:
+// 	  Test when a field in a class has the same name as the class
+// 	
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 19/01/2023
+
+class A {
+    int A = 0;
+}

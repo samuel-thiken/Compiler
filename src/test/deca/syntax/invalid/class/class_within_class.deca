@@ -1,0 +1,14 @@
+/// Description:
+// 	  Error syntax when declaring a class within a class
+// 	
+// Resultats:
+// 	  Syntax Error
+//    line 12
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    int x;
+    class B {
+    }
+}

@@ -1,0 +1,58 @@
+// Description:
+//    test construction de plusieurs classes
+//
+// Result:
+//    Ok
+//
+// Historique:
+//    cree le 14/01/2023
+
+class A {
+    protected int i;
+    boolean b;
+
+    void set(int i, boolean b) {
+        this.i = i;
+        this.b = b;
+    }
+
+    int valueA() {
+        if (this.b == true) {
+            return this.i;
+        }
+    }
+}
+
+class B extends A {
+    protected float x;
+
+    void set(int i, boolean b) {
+        this.x = readFloat();
+        this.i = i;
+        this.b = b;
+    } 
+
+    float valueB() {
+        if (this.b == true) {
+            return this.x + this.i;
+        }
+    }
+}
+
+{
+    B objet2 = new B();
+    A objet1 = new A();
+
+    objet2.set(6, true);
+    objet1.set(8, true);
+
+    if (objet1.valueA() == objet2.valueB()) {
+        println("Les deux objets sont condiérés comme identique");
+    }
+
+    objet2 = (A) (objet1);
+    if (objet1 instanceof A) {
+        println("objet 2 est désormais de type A");
+    }
+    
+}

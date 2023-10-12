@@ -1,0 +1,12 @@
+// Description:
+// 	  Teste l'overflow pour le minus entier (valide)
+//
+// Resultats:
+//  
+//
+// Historique:
+// 	  cree le /01/2023
+{
+    int x = 2147483647;
+    int y = -x - 2;
+}

@@ -1,0 +1,9 @@
+// Description:
+//    Error : void type is not allowed for a variable
+//
+// Result:
+//    VOID_VARIABLE_NOT_ALLOWED: Variable \(.\)\+ cannot be of type void 
+//    line 8
+{
+    void a;
+}

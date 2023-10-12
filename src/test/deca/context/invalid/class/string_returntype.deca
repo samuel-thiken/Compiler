@@ -1,0 +1,14 @@
+/// Description:
+// 	  Test syntax when returning a string inside a method
+// 	
+// Resultats:
+// 	  UNDEFINED_TYPE: Type string is undefined
+//    line 11
+// Historique:
+// 	  cree le 19/01/2023
+class A {
+    int x;
+    string m() {
+        return "hola";
+    }
+}

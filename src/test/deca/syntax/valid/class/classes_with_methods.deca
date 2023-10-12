@@ -1,0 +1,20 @@
+/// Description:
+// 	  Test of syntax with methods and fields
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 12/01/2023
+class A {
+    int x;
+    void f() {}
+    int y;
+    void g() {}
+    int z;
+}
+
+class B extends A {
+    int z;
+    void f() {}
+    void h() {}
+    int x;
+}

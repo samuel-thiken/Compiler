@@ -1,0 +1,10 @@
+/// Description:
+// 	  Test syntax with 'new' token
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 12/01/2023
+class A extends B {}
+{
+    A a = new A();
+}

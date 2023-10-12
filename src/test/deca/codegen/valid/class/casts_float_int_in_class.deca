@@ -1,0 +1,25 @@
+/// Description:
+// 	  Test for all sorts of casts between integers and floats inside a class
+// 	
+// Resultats:
+// 	  4 / 4.00000e+00
+// Historique:
+// 	  cree le 19/01/2023
+
+class A {
+    int a = -38 + (int) (8 - 42*5 + 1);
+    float my_float = a + 6; //convfloat 
+    int lotOfCasts(float f, int i) {
+        f = i; //convfloat
+        this.a = (int) (f + 0.4f * (0.0001e4 -1)); //explicit cast of an expression
+        return (int) (f);
+    }
+}
+{
+    A objA = new A();
+    int a = 4;
+    float f = objA.lotOfCasts(a, (int) (4.0));
+    print(objA.a);
+    print(" / ");
+    print(f);
+}

@@ -1,0 +1,16 @@
+// Description:
+// 	  
+// 	
+// Resultats:
+// 	  C
+// Historique:
+// 	  cree le 14/01/2023
+{
+    if (false) {
+        print("A");
+    } else if (false) {
+        print("B");
+    } else if (true) {
+        print("C");
+    }
+}

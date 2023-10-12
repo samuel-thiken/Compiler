@@ -1,0 +1,14 @@
+/// Description:
+// 	  Test of an error syntax when an invalid cast is being done in parameter of a method call
+// 	
+// Resultats:
+// 	  INVALID_CAST: Type string cannot be cast to type int
+//    line 12
+// Historique:
+// 	  cree le 19/01/2023
+
+class MACLASSE {
+    int myMethod(float f) {
+        return "coucou";
+    }
+}

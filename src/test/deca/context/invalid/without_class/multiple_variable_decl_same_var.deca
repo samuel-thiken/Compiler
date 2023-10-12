@@ -1,0 +1,9 @@
+// Description:
+//    Test multiple variable declaration with 2 same variables 	  
+//
+// Resultats:
+//    ALREADY_DEFINED_VAR: Variable h is already defined 
+//    line 8
+{
+    int a,b,c,d,e,f,g,h,h,i,j,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
+}

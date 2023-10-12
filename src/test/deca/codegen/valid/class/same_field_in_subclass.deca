@@ -1,0 +1,70 @@
+// Description:
+// 	 test plusieurs champ de nom i type entier
+// 	
+// Resultats:
+//    8      
+//
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    
+    protected int i;
+    protected int j;
+
+    void setI(int i) {
+        this.i = i;
+    }
+
+    void setJ(int a) {
+        this.j = a;
+    }
+
+    int getI() {
+        return this.i;
+    }
+
+
+    int getJ() {
+        return this.j;
+    }
+}
+
+class B extends A {
+    protected boolean b;
+    float x;
+    int y;
+    protected int i;
+
+
+    void method() {
+        this.i = this.i;
+    
+    }
+
+    void initialize(int i) {
+        this.i = i + y;
+    }
+
+    float operation(float y) {
+        return this.x + y;
+    }
+    
+}
+
+class C extends B {
+
+    void setI(int i) {
+        this.i = i;
+    }
+
+    int getI() { return this.i;}
+
+}
+
+{
+    C objetC = new C();
+    objetC.setI(8);
+    print(objetC.getI());
+    
+}

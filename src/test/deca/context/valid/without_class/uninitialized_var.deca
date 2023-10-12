@@ -1,0 +1,10 @@
+/// Description:
+// 	  Test of an unitialized var
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 13/01/2023
+{
+    int a, b=a;
+    print(a);
+}

@@ -1,0 +1,71 @@
+// Description:
+// 	  Plus de calculs 
+// 	
+// Resultats:
+// 	  15 35 99
+// Historique:
+// 	  cree le /01/2023
+
+class Vector3D {
+    
+    float x;
+    float y;
+    float z;
+
+    void add(Vector3D v) {
+        x = v.x + x;
+        y = v.y + y;
+        z = v.z + z;
+    }
+
+    void multiply(float f) {
+        x = x * f;
+        y = y * f;
+        z = z * f;
+    }
+
+    float dot_product(Vector3D v) {
+        return x * v.x + y * v.y + z * v.z;
+    }
+
+    Vector3D cross_product(Vector3D v) {
+        Vector3D result = new Vector3D();
+        result.x = y * v.z - z * v.y;
+        result.y = z * v.x - x * v.z;
+        result.z = x * v.y - y * v.x;
+        return result;
+    }
+
+    float square() {
+        return dot_product(this);
+    }
+
+    boolean equals(Vector3D v) {
+        return (v.x == x) && (v.y == y) && (v.z == z);
+    }
+
+}
+
+{
+    Vector3D e1 = new Vector3D();
+    Vector3D e2 = new Vector3D();
+    Vector3D e3 = new Vector3D();
+    int x;
+    int y; 
+    int z;
+
+    Vector3D randomVector = new Vector3D();
+    randomVector.x = 15;
+    randomVector.y = 35;
+    randomVector.z = 99;
+    e1.x = 1;
+    e2.y = 1;
+    e3.z = 1;
+
+    x = (int) (randomVector.dot_product(e1));
+    y = (int) (randomVector.dot_product(e2));
+    z = (int) (randomVector.dot_product(e3));
+
+    println(x, " ", y, " ", z);
+
+}

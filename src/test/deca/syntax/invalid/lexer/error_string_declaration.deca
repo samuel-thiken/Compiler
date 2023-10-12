@@ -1,0 +1,10 @@
+// Description:
+//    Error string declaration with backslash and quotes 
+//
+// Result:
+//    Syntax Error
+//    line 9
+
+{
+    print("Vive \\\"Deca\"\\"); //should be "Vive \\"Deca\"\\" -> cf poly p 54
+}

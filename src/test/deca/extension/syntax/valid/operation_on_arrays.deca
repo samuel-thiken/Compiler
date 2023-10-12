@@ -1,0 +1,18 @@
+// Description:
+// 	  Different undefined operation on arrays
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int[3] A = {3, 2, 1};
+    int[3] B = {1, 2, 3};
+    int[3][1] C = {{1}, {1}, {1}};
+    int[3] C1 = A + B;
+    int[1][3] C2 = {A + B};
+    int[1][3] C3 = {A} + {B};
+    int[3] C4 = 2 * A;
+    int[3][3] C5 = C * C2;
+    int[3] C6 = A - B;
+}

@@ -1,0 +1,43 @@
+// Description:
+// 	  doing easy calcul with vectorz
+// 	
+// Resultats:
+// 	  1.00000e+00 1.00000e+00
+// Historique:
+// 	  cree le /01/2023
+
+class Vector3D {
+    
+    float x;
+    float y;
+    float z;
+
+    float dot_product(Vector3D v) {
+        return x * v.x + y * v.y + z * v.z;
+    }
+
+    Vector3D cross_product(Vector3D v) {
+        Vector3D result = new Vector3D();
+        result.x = y * v.z - z * v.y;
+        result.y = z * v.x - x * v.z;
+        result.z = x * v.y - y * v.x;
+        return result;
+    }
+
+    float square() {
+        return dot_product(this);
+    }
+
+}
+
+{
+    Vector3D e1 = new Vector3D();
+    Vector3D e2 = new Vector3D();
+    Vector3D e3 = new Vector3D();
+
+    e1.x = 1;
+    e2.y = 1;
+    e3 = e1.cross_product(e2);
+
+    println(e1.square(), " ", e3.square());
+}

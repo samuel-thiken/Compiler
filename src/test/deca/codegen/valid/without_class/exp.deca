@@ -1,0 +1,28 @@
+// Description:
+// 	  Calcule exp(1)
+// 	
+// Resultats:
+// 	  2.71828e+00
+// Historique:
+// 	  cree le /01/2023
+{
+    int N = 25;
+    int n = 0;
+    float value = 0;
+    float fact = 1;
+    int k = 0;
+
+    while(n < N) {
+        while(k < n) {
+            fact = fact * ( k + 1 );
+            k = k + 1;
+        }
+        value = value + 1/fact;
+        k = 0;
+        fact = 1;
+
+        n = n + 1;
+    }
+
+    println(value);
+}

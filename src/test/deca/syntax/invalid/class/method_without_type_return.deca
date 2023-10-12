@@ -1,0 +1,15 @@
+/// Description:
+// 	  Test of an error with the cast syntax
+// 
+//  Resultats:
+//    Syntax error
+//    line 12
+// Historique:
+// 	  cree le 18/01/2023
+class Animal {
+    protected int i;
+
+    method() {
+
+    }
+}

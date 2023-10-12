@@ -1,0 +1,14 @@
+/// Description:
+// 	  Test error syntax when returning nothing
+// 	
+// Resultats:
+// 	  Syntax error
+//    line 12
+// Historique:
+// 	  cree le 19/01/2023
+class A {
+    int x;
+    void m() {
+        return;
+    }
+}

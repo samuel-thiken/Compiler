@@ -1,0 +1,16 @@
+// Description:
+//    Teste les lectures d'entiers et flottants depuis la console
+//
+// Resultats:
+//    Première entrée : 42 / Deuxième entrée : 4.14000e+01
+//
+// Historique:
+//    cree le 08/01/2023
+{
+    int a = readInt();
+    float b = readFloat();
+
+    print("Première entrée : ", a);
+    print(" / ");
+    print("Deuxième entrée : ", b);
+}

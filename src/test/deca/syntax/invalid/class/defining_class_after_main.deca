@@ -1,0 +1,21 @@
+/// Description:
+// 	  Test of syntax error defining class after the main
+// 
+//  Resultats:
+//    Syntax error
+//    line 17
+// Historique:
+// 	  cree le 18/01/2023
+{
+    //empty main
+}
+
+class Animal {}
+class Canard extends Animal {}
+class Poulet extends Animal {}
+
+{
+    Poulet a = new Animal();
+    Canard b = new Poulet();
+    Animal random_animal = (Animal) b;
+}

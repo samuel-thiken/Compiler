@@ -1,0 +1,21 @@
+// Description:
+// 	  use new declaration in a method of an undefined type 
+//
+// Resultats:
+// 	UNDEFINED_TYPE: Type A is undefined
+//  line 15
+// Historique:
+// 	  cree le 15/01/2023
+
+class B {
+    
+    protected float x;
+
+    int methodB() {
+        int y = new A();
+        return 1;
+    }
+}
+{
+    B objectB = new B();
+}

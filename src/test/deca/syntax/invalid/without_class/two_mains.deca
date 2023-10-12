@@ -1,0 +1,13 @@
+/// Description:
+// 	  Test of an error : cannot define two mains in the same program file
+// 
+//  Resultats:
+//    Syntax Error
+//    line 11
+{ 
+    //first main = empty main
+}
+
+{
+    int a = 0; //second main
+}

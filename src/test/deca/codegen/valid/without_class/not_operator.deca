@@ -1,0 +1,19 @@
+// Description:
+//    Teste la table de vérité de l'opérateur not (!)
+//
+// Resultats:
+//    a : false / a : true
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    boolean a;
+
+    a = true;
+    if (!a) { print("a : true"); } else { print("a : false"); }
+
+    print(" / ");
+
+    a = false;
+    if (!a) { print("a : true"); } else { print("a : false"); }
+}

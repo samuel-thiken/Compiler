@@ -1,0 +1,10 @@
+// Description:
+// 	  Teste la déclaration d'une variable de type null
+// Resultats:
+// 	  
+//    line 9
+// Historique:
+// 	  cree le 13/01/2023
+{
+    null x;
+}

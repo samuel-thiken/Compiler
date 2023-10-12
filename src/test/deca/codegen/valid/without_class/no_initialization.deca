@@ -1,0 +1,10 @@
+// Description:
+// 	  Teste la décompilation pour une déclaration de variable sans initialisation
+// Resultats:
+// 	  
+//
+// Historique:
+// 	  cree le 13/01/2023
+{
+    int x;
+}

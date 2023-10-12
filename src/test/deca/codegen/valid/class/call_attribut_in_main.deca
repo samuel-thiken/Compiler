@@ -1,0 +1,28 @@
+//// Description:
+// 	  using attribut field in main 
+// 	
+// Resultats:
+// 	  8
+// Historique:
+// 	  cree le 21/01/2023
+
+class A {
+
+    int i;
+
+    int method1 (int i) {
+        return i;
+    }
+
+    void set(int i) {this.i = i; }
+
+
+}
+
+{
+    A a = new A();
+    a.set(8);
+    print( a.method1(a.i) );
+
+
+}

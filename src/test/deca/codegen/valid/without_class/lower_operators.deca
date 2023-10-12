@@ -1,0 +1,52 @@
+// Description:
+//    Teste tous les types d'opérateurs binaires de comparaison inférieure (<, <=)
+//
+// Resultats:
+//    5<10 : true / 5<=10 : true / -5<10 : true / -5<=10 : true / 10<5 : false / 10<=5 : false / 10<-5 : false / 10<=-5 : false / c<=a / a<=c
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    int a, b;
+    float c;
+
+    a = 5; b = 10;
+    if (a < b) { print("5<10 : true"); } else { print("5<10 : false"); }
+    print(" / ");
+    if (a <= b) { print("5<=10 : true"); } else { print("5<=10 : false"); }
+    
+    print(" / ");
+
+    a = -5; b = 10;
+    if (a < b) { print("-5<10 : true"); } else { print("-5<10 : false"); }
+    print(" / ");
+    if (a <= b) { print("-5<=10 : true"); } else { print("-5<=10 : false"); }
+    
+    print(" / ");
+
+    a = 10; b = 5;
+    if (a < b) { print("10<5 : true"); } else { print("10<5 : false"); }
+    print(" / ");
+    if (a <= b) { print("10<=5 : true"); } else { print("10<=5 : false"); }
+    
+    print(" / ");
+
+    a = 10; b = -5;
+    if (a < b) { print("10<-5 : true"); } else { print("10<-5 : false"); }
+    print(" / ");
+    if (a <= b) { print("10<=-5 : true"); } else { print("10<=-5 : false"); }
+    
+    a = 10; c = 10.0;
+    if (c < a) {
+        print(" / c<a");
+    }
+    if (c <= a) {
+        print(" / c<=a");
+    }
+    if (a < c) {
+        print(" / a<c");
+    }
+    if (a <= c) {
+        print(" / a<=c");
+    }
+}

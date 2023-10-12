@@ -1,0 +1,18 @@
+// Description:
+// 	  Crée un objet avec uniquement des attributs et les affiches.
+// 	
+// Resultats:
+//    0 0.00000e+00 
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    int x;
+    float y;
+    boolean z;
+}
+
+{
+    A a = new A();
+    println(a.x, " ", a.y);
+}

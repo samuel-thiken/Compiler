@@ -1,0 +1,18 @@
+/// Description:
+// 	  Cast non accepted in Deca when declaring a new instance of a class
+//
+// Resultats:
+// 	INVALID_CAST: Type A cannot be cast to type B
+//  line 17
+// Historique:
+// 	  cree le 17/01/2023
+
+class A {
+    protected boolean x = true;
+}
+class B extends A {
+}
+
+{
+    B obj = new A(); // not ok as B is a subtype of A
+}

@@ -1,0 +1,41 @@
+// Description:
+// 	  Test d'héritage multiple sur les points avec accès aux attributs des parents (sur plusieurs générations)
+// 	
+// Resultats:
+// 	  2 4 6
+// Historique:
+// 	  cree le 19/01/2023
+
+class Point1D {
+    int x;
+}
+
+class Point2D extends Point1D {
+    int y;
+}
+
+class Point3D extends Point2D {
+    int z;
+
+    Point3D ajoute(Point3D a, Point3D b) {
+        Point3D c = new Point3D();
+        c.x = a.x + b.x;
+        c.y = a.y + b.y;
+        c.z = a.z + b.z;
+        return c;
+    }
+
+    void affiche() {
+        println(x, " ", y, " ", z);
+    }
+}
+
+{
+    Point3D p = new Point3D();
+    Point3D deuxP;
+    p.x = 1;
+    p.y = 2;
+    p.z = 3;
+    deuxP = p.ajoute(p, p);
+    deuxP.affiche();
+}

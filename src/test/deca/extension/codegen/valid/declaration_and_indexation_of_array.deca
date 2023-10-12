@@ -1,0 +1,37 @@
+// Description:
+// 	  Declaration of array and assignment with indexation
+// Resultats:
+// 	  2 - 6 - 8 - 12 - 2 - 6
+// Historique:
+// 	  cree le 21/01/2023
+
+{
+    int[3][2] tab;
+    int[2] sous_tab1;
+    int[2] sous_tab2;
+
+    sous_tab1[0] = 2;
+    sous_tab1[1] = 6;
+
+    sous_tab2[0] = sous_tab1[0] + sous_tab1[1];
+    sous_tab2[1] = sous_tab1[0] + sous_tab1[1];
+
+    print(sous_tab1[0]);
+    print(" - ");
+    print(sous_tab1[1]);
+
+    // tab[0] = sous_tab1;
+    // tab[1] = sous_tab2;
+    // tab[sous_tab1[0] + 1 - 1] = tab[0];
+    // print(tab[0][0]);
+    // print(" - ");
+    // print(tab[0][1]);
+    // print(" - ");
+    // print(tab[1][0]);
+    // print(" - ");
+    // print(tab[1][1]);
+    // print(" - ");
+    // print(tab[2][0]);
+    // print(" - ");
+    // print(tab[2][1]);
+}

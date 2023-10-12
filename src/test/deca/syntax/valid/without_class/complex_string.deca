@@ -1,0 +1,14 @@
+// Description :
+//    test de print de chaines de caractères complexes
+//
+// Resultats :
+//    ok
+//
+// Historique:
+//    cree le 08/01/2023
+{
+    print(" \\" ");
+    print(" \" ");
+    print(" \\\\ ");
+    print(" //\\/ oeif +-'_(r");
+}

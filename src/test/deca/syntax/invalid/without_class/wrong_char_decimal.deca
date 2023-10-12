@@ -1,0 +1,11 @@
+// Description:
+//    Error in use of decimal numbers : ',' instead of '.'
+//
+// Result:
+//    Syntax Error
+//    line 9
+
+{    
+    float x = 1,2;
+    return x;  
+}

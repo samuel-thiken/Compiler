@@ -1,0 +1,11 @@
+// Description:
+//    Error : operator addition not defined with type boolean
+//
+// Result:
+//    INCOMPATIBLE_TYPE_OPERATOR: Type \(.\)\+ is incompatible with type \(.\)\+ for the operator \(.\)\+
+//    line 10
+{
+    boolean a = true;
+    int b = 0;
+    print("addition is not defined with a type int and a boolean ", a+b);
+}

@@ -1,0 +1,14 @@
+// Description:
+// 	  Teste une condition de la forme (TRUE && un identifier pas booléen)
+// 	
+// Resultats:
+// 	  NOT_A_BOOLEAN_CONDITION: Expression 2 is not a boolean expression
+//    line 9
+
+{
+    if(true && 2) {
+        println("Mince");
+    } else {
+        println("Mince aussi");
+    }
+}

@@ -1,0 +1,7 @@
+/// Description:
+// 	  error : undefined type class in class declaration
+//
+// Resultats:
+// 	  UNDEFINED_TYPE: Type \(.\)\+ is undefined
+//    line 7
+class A extends B {}

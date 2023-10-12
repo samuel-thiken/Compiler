@@ -1,0 +1,28 @@
+/// Description:
+// 	  Including the file Matrix.decah and doing some simple operations on it
+// Resultats:
+// 	  [[1.00000e+00, 2.00000e+00], [3.00000e+00, 4.00000e+00]]
+// Historique:
+// 	  cree le 21/01/2023
+
+#include "Matrix.decah"
+
+class newMatrix {
+    float[][] helloMatrix() {
+        return {{1, 2}, {3, 4}};
+    }
+}
+
+{
+    // first tab
+    newMatrix tmpVar = new newMatrix();
+    float[][] tab = tmpVar.helloMatrix();
+    
+    // second tab
+
+    Matrix tmpVar2 = new Matrix();
+    float[2][2] otherTab = tmpVar2.initMatrixZeros(2,2);
+
+    // print the addition of the two matrices
+    tmpVar2.printMatrix(tmpVar2.add(tab, 2, 2, otherTab, 2, 2), 2, 2);
+}

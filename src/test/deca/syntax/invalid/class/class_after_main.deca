@@ -1,0 +1,20 @@
+/// Description:
+// 	  Test of syntax error defining class after the main
+// 
+//  Resultats:
+//  Syntax error
+//  line 18
+
+class Animal {}
+class Canard extends Animal {}
+class Poulet extends Animal {}
+
+{
+    Poulet a = new Animal();
+    Canard b = new Poulet();
+    Animal random_animal = (Animal) (b);
+}
+
+class A {
+    protected int i;
+}

@@ -1,0 +1,17 @@
+//// Description:
+// 	  Test with header file 
+// 	
+// Resultats:
+// 	  3.20000e+00
+// Historique:
+// 	  cree le /01/2023
+
+#include "headerFile.decah"
+
+{
+    float x;
+    B objB = new B();
+    objB.setA(1, 2.2, true);
+    x = objB.getObjetA().sumParamIfTrue();
+    println(x);
+}

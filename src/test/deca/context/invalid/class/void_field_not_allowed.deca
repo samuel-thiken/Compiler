@@ -1,0 +1,11 @@
+// Description:
+// 	  Testing the contextual error associated with a void field inside a class
+//
+// Resultats:
+// 	VOID_FIELD_NOT_ALLOWED: Field \(.\)\+ cannot be of type void
+//  line 10
+// Historique:
+// 	  cree le 15/01/2023
+class A {
+    void a;
+}

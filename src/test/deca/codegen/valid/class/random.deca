@@ -1,0 +1,31 @@
+// Description:
+// 	  Création d'une classe permettant de générer des nombres aléatoires à partir d'un seed
+// 	
+// Resultats:
+// 	  45 66 43
+// Historique:
+// 	  cree le /01/2023
+class RandomInt {
+    
+    int seed;
+    int max;
+    int current;
+    
+    void init(int seed, int max) {
+        this.seed = seed;
+        this.current = seed;
+        this.max = max;
+    }
+
+    int getNextVal() {
+        current = (65537 * current + 21101) % max;
+        return current;
+    }
+
+}
+
+{
+    RandomInt r = new RandomInt();
+    r.init(12, 100);
+    print(r.getNextVal(), " ", r.getNextVal(), " ", r.getNextVal());
+}

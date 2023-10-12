@@ -1,0 +1,11 @@
+/// Description:
+// 	  Test when specifying that a class extends Object superclass
+// 	
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 19/01/2023
+
+class A extends Object {
+    
+}

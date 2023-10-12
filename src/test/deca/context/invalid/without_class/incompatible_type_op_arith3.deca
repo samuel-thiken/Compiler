@@ -1,0 +1,10 @@
+// Description:
+//    Error in print function arguments
+//
+// Result:
+//     INCOMPATIBLE_TYPE_OPERATOR: Type string is incompatible with type string for the operator +
+//     line 9
+
+{
+    print("Hello" + "World");
+}

@@ -1,0 +1,11 @@
+/// Description:
+// 	  Test of syntax of classes with private fields and without methods
+// 
+//  Resultats:
+//    Syntax error
+//    line 10
+// Historique:
+// 	  cree le 18/01/2023
+class A {
+    private void x;
+}

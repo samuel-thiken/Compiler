@@ -1,0 +1,9 @@
+// Description:
+//    Error : boolean type not printable
+//
+// Result:
+//    INCOMPATIBLE_TYPE_PARAMETER: Cannot assign type \(.\)\+ as parameter of type printable
+//    line 8
+{
+    print(false && true || false);
+}

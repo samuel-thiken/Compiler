@@ -1,0 +1,15 @@
+// Description :
+//    test sur la présence de commentaires sur plusieurs lignes dans le code
+//
+// Resultats :
+//    ok
+//
+// Historique:
+//    cree le 06/01/2023
+
+{
+    /* print("Vide Veca");
+    print("Vede Dica"); */
+    print("Vive Deca");
+    /* print("Vice Deva"); */
+}

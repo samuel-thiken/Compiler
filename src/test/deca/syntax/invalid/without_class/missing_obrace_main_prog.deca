@@ -1,0 +1,9 @@
+// Description:
+//    Missing obrace in main  
+//
+// Result:
+//    Syntax Error
+//    line 8
+
+return 0;
+}

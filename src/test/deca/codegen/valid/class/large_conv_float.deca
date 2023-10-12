@@ -1,0 +1,36 @@
+// Description:
+// 	  Plein de conversions de flottants !!!
+// 	
+// Resultats:
+// 	  1.32516e+05
+// Historique:
+// 	  cree le 19/01/2023
+
+class fullOfMethods {
+    int method0() {
+        return 51215;
+    }
+    int method1() {
+        return 73206;
+    }
+    float method2() {
+         return 3.1415;
+    }
+    float method3() {
+         return 3.1415;
+    }
+    int method4() {
+        return 8089;
+    }
+}
+{
+    fullOfMethods met = new fullOfMethods();
+    float res = 0;
+    res = res + met.method0();
+    res = res + met.method1();
+    res = res + met.method2();
+    res = res + met.method3();
+    res = res + met.method4();
+    println(res);
+}
+

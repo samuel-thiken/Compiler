@@ -1,0 +1,16 @@
+// Description:
+//    Error usign control structure if, else, else if
+//
+// Result:
+//    no viable alternative at input \(.\)\+
+//    line 13
+
+{
+    int i = 0;
+    if (i != 0) {
+        print("not ok");
+    }
+    else (i < 0) {
+        print("not ok");
+    }
+}

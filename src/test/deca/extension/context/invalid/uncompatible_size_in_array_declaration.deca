@@ -1,0 +1,13 @@
+// Description:
+// 	  Uncompatible size in array declaration
+// Resultats:
+// 	  INCOMPATIBLE_SIZE_IN_ARRAY: The first array's size is 2 and an other array's size is 3
+//    line 12
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int[] A;
+    int[] B;
+    int[][] C = {{A, B}, {A, A}, {A, B, A}};
+}

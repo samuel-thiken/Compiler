@@ -1,0 +1,12 @@
+// Description:
+//    Error modulo operator with float
+//
+// Result:
+//     INCOMPATIBLE_TYPE_OPERATOR: Type float is incompatible with type float for the operator %
+//     line 11
+
+{
+    float x = 2.0;
+    float y = 8.8;
+    int z = x % y;
+}

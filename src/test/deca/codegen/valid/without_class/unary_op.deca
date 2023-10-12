@@ -1,0 +1,36 @@
+// Description:
+//    Teste tous les types d'opérations unaires
+//
+// Resultats:
+//    d : -3.00000e+00 / a : -6 / c : 3.00000e+00 / bool_1 : false
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    int a = 3;
+    int b = 6;
+
+    float c = 3.0;
+    float d = -c;
+
+    boolean bool_1 = true;
+    boolean bool_2 = true;
+    
+    a = -b;
+    c = -d;
+
+    bool_1 = !bool_2;
+
+    print("d : ",  d);
+    print(" / ");
+    print("a : ", a);
+    print(" / ");
+    print("c : ", c);
+    print(" / ");
+    if (bool_1) {
+        print("bool_1 : true");
+    }
+    else {
+        print("bool_1 : false");
+    }
+}

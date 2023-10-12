@@ -1,0 +1,17 @@
+// Description:
+// 	  Cannot have a field with the same name as a inherited method in a subclass
+//
+// Resultats:
+// 	INVALID_NAME_FIELD: The field name cannot be the same as inherited method my_method
+//  line 16
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    int x;
+    void my_method() {
+    }
+}
+class B extends A {
+    int my_method;
+}

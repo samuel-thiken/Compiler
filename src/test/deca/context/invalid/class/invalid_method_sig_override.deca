@@ -1,0 +1,16 @@
+// Description:
+// 	  Testing the contextual error associated with a wrong signature when overriding a method inside a class
+//
+// Resultats:
+// 	INVALID_METHOD_SIGNATURE_OVERRIDE: Override method myIntMethod in class C doesn't have the same signature as in one of its superclasses
+//  line 15
+// Historique:
+// 	  cree le 13/01/2023
+class A {
+    int myIntMethod(int b, int a) {}
+}
+class B extends A {}
+
+class C extends B {
+    int myIntMethod(boolean b, int a) {} // not permitted
+}

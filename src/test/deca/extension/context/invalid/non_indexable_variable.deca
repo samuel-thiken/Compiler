@@ -1,0 +1,12 @@
+// Description:
+// 	  Indexation d'une variable non indexable
+// Resultats:
+//    NON_INDEXABLE_VARIABLE: Variable int\[\] is not indexable
+//    line 11
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int[3] tab = {1, 2, 3};
+    int a = tab[1][0];
+}

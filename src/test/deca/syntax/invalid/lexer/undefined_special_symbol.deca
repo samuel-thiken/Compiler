@@ -1,0 +1,15 @@
+// Description:
+//    undefined special symbol 
+//
+// Result:
+//    Syntax Error
+//    line 14
+
+{
+    int x = 1;
+    int y = 1;
+
+    int z;
+
+    z = x : y;
+}

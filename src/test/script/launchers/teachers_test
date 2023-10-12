@@ -1,0 +1,24 @@
+#! /bin/bash
+
+DECAC_HOME=$(cd "$(dirname "$0")"/../../../../ && pwd)
+
+YELLOW='\033[0;33m'
+NC='\033[0m' # No Color
+
+echo -e "${YELLOW}basic-lex${NC}"
+"$DECAC_HOME"/src/test/script/basic-lex.sh
+
+echo -e "\n${YELLOW}basic-synt${NC}"
+"$DECAC_HOME"/src/test/script/basic-synt.sh
+
+echo -e "\n${YELLOW}basic-context${NC}"
+"$DECAC_HOME"/src/test/script/basic-context.sh
+
+echo -e "\n${YELLOW}basic-gencode${NC}"
+"$DECAC_HOME"/src/test/script/basic-gencode.sh
+
+echo -e "\n${YELLOW}basic-decac${NC}"
+"$DECAC_HOME"/src/test/script/basic-decac.sh
+
+echo -e "\n${YELLOW}common-tests${NC}"
+"$DECAC_HOME"/src/test/script/common-tests.sh

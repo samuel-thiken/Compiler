@@ -1,0 +1,12 @@
+// Description:
+// 	  Modification on different array's elements
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int[2][3] tab = {{1, 2, 3}, {4, 5, 6}};
+    tab[1][2] = 2 * tab[1][1];
+    tab[0] = {3, 2, 1};
+}

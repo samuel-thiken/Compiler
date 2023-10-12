@@ -1,0 +1,11 @@
+// Description :
+//    testing syntax of list variable declaration
+//
+// Resultats :
+//    ok
+//
+// Historique:
+//    cree le 12/01/2023
+{
+    int a, b, c;
+}

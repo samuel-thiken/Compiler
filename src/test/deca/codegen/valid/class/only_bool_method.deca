@@ -1,0 +1,29 @@
+// Description:
+// 	  Crée un objet avec des méthodes qui renvoient true
+// 	
+// Resultats:
+// 	  00
+// Historique:
+// 	  cree le 18/01/2023
+class A {
+
+    boolean getTrue() {
+        return true;
+    }
+
+    boolean getTrueVar() {
+        boolean zero = true;
+        return zero;
+    }
+
+}
+
+{
+    A a = new A();
+    if(a.getTrue()) {
+        print("0");
+    }
+    if(a.getTrueVar()) {
+        println("0");
+    }
+}

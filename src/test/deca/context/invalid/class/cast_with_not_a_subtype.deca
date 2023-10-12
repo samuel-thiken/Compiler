@@ -1,0 +1,26 @@
+// Description:
+// 	  Testing a cast with a class that is not a subclass
+//
+// Resultats:
+// 	INVALID_CAST: Type A cannot be cast to type B
+//  line 22
+// Historique:
+// 	  cree le 15/01/2023
+
+class A {
+
+}
+
+class B {
+
+}
+
+// Class B doesnt extends A
+{
+    A objectA = new A();
+    B objectB = new B();
+    objectB = (B) (objectA);
+}
+
+
+

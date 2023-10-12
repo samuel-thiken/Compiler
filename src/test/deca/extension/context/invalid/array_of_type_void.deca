@@ -1,0 +1,11 @@
+// Description:
+// 	  Declaration of array containing elements of type void
+// Resultats:
+// 	  VOID_VARIABLE_NOT_ALLOWED: Variable tab cannot be of type void
+//    line 10
+// Historique:
+// 	  cree le /01/2023
+
+{
+    void[2] tab;
+}

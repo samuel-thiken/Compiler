@@ -1,0 +1,9 @@
+// Description:
+//    Error : not possible to have a variable name starting by a number
+//
+// Result:
+//    no viable alternative at input '9'
+//    line 8
+{
+    int 9variable;
+}

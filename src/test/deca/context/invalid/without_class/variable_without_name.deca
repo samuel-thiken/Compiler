@@ -1,0 +1,11 @@
+// Description:
+//    Variable declared without type
+//
+// Result:
+//    UNDEFINED_VAR: Variable \(.\)\+ is undefined
+//    line 10
+
+
+{
+    int = 2;
+}

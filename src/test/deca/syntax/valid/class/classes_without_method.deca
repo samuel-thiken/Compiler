@@ -1,0 +1,9 @@
+/// Description:
+// 	  Test of the syntax for empty classes (without methods) and with legacy
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 12/01/2023
+class X { }
+class Y extends X { }
+class Z extends X { }

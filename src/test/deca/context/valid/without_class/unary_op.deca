@@ -1,0 +1,23 @@
+// Description:
+//    Teste tous les types d'opérations unaires
+//
+// Result:
+// 
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    int a = 3;
+    int b = 6;
+
+    float c = 3.0;
+    float d = -c;
+
+    boolean bool_1 = true;
+    boolean bool_2 = false;
+    
+    a = -b;
+    c = -d;
+
+    bool_1 = !!bool_2;
+}

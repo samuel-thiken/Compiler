@@ -1,0 +1,12 @@
+// Description:
+//    Teste les lectures d'entiers et flottants depuis la console
+//
+// Result:
+//    
+//
+// Historique:
+//    cree le 08/01/2023
+{
+    int a = readInt();
+    float b = readFloat();
+}

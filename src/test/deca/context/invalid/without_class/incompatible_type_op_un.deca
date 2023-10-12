@@ -1,0 +1,11 @@
+// Description:
+//    Error : operator unary minus not defined with type boolean
+//
+// Result:
+//    INCOMPATIBLE_TYPE_UN_OPERATOR: Type \(.\)\+ is incompatible with the operator \(.\)\+
+//    line 10
+
+{
+    boolean a = true;
+    print("addition is not defined with a type int and a boolean ", -a);
+}

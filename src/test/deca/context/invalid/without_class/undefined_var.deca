@@ -1,0 +1,10 @@
+// Description:
+//    Program using an undeclared variable 
+//
+// Result:
+//    UNDEFINED_VAR: Variable \(.\)\+ is undefined
+//    line 9
+{
+    int x = 0;
+    x = y; //y is undefined
+}

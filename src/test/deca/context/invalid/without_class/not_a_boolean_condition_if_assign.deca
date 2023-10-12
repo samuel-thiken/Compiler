@@ -1,0 +1,13 @@
+// Description:
+//    Error : x=y is not a condition (not a boolean)
+//
+// Result:
+//    NOT_A_BOOLEAN_CONDITION: Expression \(.\)\+ is not a boolean expression
+//    line 10
+{
+    int x = 5;
+    int y = 7;
+    if (x = y) {
+        print("Ne devrait jamais passer par ici");
+    }
+}

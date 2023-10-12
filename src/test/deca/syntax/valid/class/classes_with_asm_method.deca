@@ -1,0 +1,13 @@
+/// Description:
+// 	  Test classes with asm body method
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 12/01/2023
+class A {
+    protected boolean x;
+    void myAsmBody()
+        asm("fiegherg
+        ergoihepjgpj 
+        caca"); //asm body method with multi-line string
+}

@@ -1,0 +1,12 @@
+// Description:
+// 	  Declaration of an array with empty bracket
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int[3][2] tab = {{1, 2}, {2, 3}, {3, 4}};
+    float[][][][] tab1;
+    tab1[0][1] = tab;
+}

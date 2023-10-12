@@ -1,0 +1,10 @@
+// Description:
+// 	  Teste la déclaration d'un objet de type Object
+// Resultats:
+// 	  
+//
+// Historique:
+// 	  cree le 13/01/2023
+{
+    Object truc;
+}

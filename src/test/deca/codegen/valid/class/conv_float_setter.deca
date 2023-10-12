@@ -1,0 +1,23 @@
+// Description:
+// 	  Appel d'un setter avec un int au lieu d'un float
+// 	
+// Resultats:
+// 	  0.00000e+00 3.00000e+00
+// Historique:
+// 	  cree le /01/2023
+class A {
+    float a;
+    void set(float a) {
+        this.a = a;
+    }
+    float get() {
+        return a;
+    }
+}
+
+{
+    A a = new A();
+    print(a.get(), " ");
+    a.set(3);
+    println(a.get());
+}

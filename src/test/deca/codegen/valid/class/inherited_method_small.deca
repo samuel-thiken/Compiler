@@ -1,0 +1,26 @@
+// Description:
+// 	  Teste l'héritage de méthodes avec pas beaucoup d'objets
+// 	
+// Resultats:
+// 	  0
+// Historique:
+// 	  cree le 19/01/2023
+
+class c_0 {
+    int var_0 = 0;
+    int getVar_0() {
+        return this.var_0;
+    }
+}
+
+class c_1 extends c_0 {
+    int var_1 = 1;
+    int getVar_1() {
+        return this.var_1;
+    }
+}
+
+{
+    c_1 var = new c_1();
+    print(var.getVar_0());
+}

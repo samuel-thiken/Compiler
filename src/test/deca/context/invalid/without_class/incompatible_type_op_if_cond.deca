@@ -1,0 +1,13 @@
+// Description:
+//    Error : x is not a boolean therefore the operator && isn't defined with x   
+//
+// Result:
+//    INCOMPATIBLE_TYPE_OPERATOR: Type \(.\)\+ is incompatible with type \(.\)\+ for the operator \(.\)\+
+//    line 10
+{
+    int x = 0;
+    boolean a = true;
+    if (x && a) {
+        print(a);
+    }
+}

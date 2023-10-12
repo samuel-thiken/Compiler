@@ -1,0 +1,22 @@
+/// Description:
+// 	  Selection on a non defined object
+//
+// Resultats:
+// 	  UNDEFINED_VAR: Variable B is undefined
+//    line 21
+// Historique:
+// 	  cree le 17/01/2023
+
+class A {
+    protected int x = 5;
+}
+class B extends A {
+    float g() {
+        return this.x;
+    }
+}
+
+{
+    
+    float f = B.g(); // B variable isn't defined
+}

@@ -1,0 +1,26 @@
+// Description:
+// 	  Test affectation avec retour de method void 
+// 	
+// Resultats:
+// 	  INVALID_CAST: Type void cannot be cast to type int
+//    line 25
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    protected int i;
+    float x;
+    float y;
+
+    void method(boolean b) {
+        print("Do nothing");
+        this.x = this.y;
+    }
+
+}
+
+
+{
+    A a = new A();
+    int r = a.method(true);
+}

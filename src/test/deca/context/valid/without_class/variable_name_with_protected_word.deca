@@ -1,0 +1,11 @@
+// Description:
+//    Variable name is a protected word
+//
+// Result:
+//    Syntax Error
+//    line 10
+
+
+{
+    int float = 2;
+}

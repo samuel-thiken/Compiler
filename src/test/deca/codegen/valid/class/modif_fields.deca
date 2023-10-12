@@ -1,0 +1,21 @@
+// Description:
+// 	  Modification des attributs d'un objet
+// 	
+// Resultats:
+// 	  5 2
+// Historique:
+// 	  cree le /01/2023
+class P {
+    int x;
+    int y;
+    void move(int a, int b) {
+        this.x = x + a;
+        y = this.y + b;
+    }
+}
+
+{
+    P point = new P();
+    point.move(5, 2);
+    println(point.x, " ", point.y);
+}

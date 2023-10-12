@@ -1,0 +1,10 @@
+// Description:
+//    Error in type assignation
+//
+// Result:
+//    INVALID_CAST: Type \(.\)\+ cannot be cast to type \(.\)\+
+//    line 9
+
+{    
+    int i = 3.0;
+}

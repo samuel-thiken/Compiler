@@ -1,0 +1,9 @@
+// Description:
+//     Wrong array declaration not detected by the contextual analysis (incompatble type)
+//
+// Result:
+//     ok
+
+{
+    float[2] tab = {1.0, 1.0, 1.0};
+}

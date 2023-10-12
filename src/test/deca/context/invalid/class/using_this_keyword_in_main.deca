@@ -1,0 +1,21 @@
+// Description:
+// 	  use new declaration in a method of an undefined type 
+//
+// Resultats:
+// 	CANNOT_USE_THIS_OUTSIDE_CLASS: Keyword `this` invalid in non-class context
+//  line 20
+// Historique:
+// 	  cree le 15/01/2023
+
+class B {
+    
+    float x;
+
+    int methodB() {
+        return 2;
+    }
+}
+{
+    B objectB = new B();
+    this.x = 2.2;
+}

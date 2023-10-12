@@ -1,0 +1,24 @@
+// Description:
+// 	  Crée un objet avec des méthodes qui renvoient 0 (int)
+// 	
+// Resultats:
+// 	  0 0
+// Historique:
+// 	  cree le 18/01/2023
+class A {
+
+    int getIntZero() {
+        return 0;
+    }
+
+    int getIntZeroVar() {
+        int zero = 0;
+        return zero;
+    }
+
+}
+
+{
+    A a = new A();
+    println(a.getIntZero(), " ", a.getIntZeroVar());
+}

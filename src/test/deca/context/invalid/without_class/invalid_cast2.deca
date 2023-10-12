@@ -1,0 +1,10 @@
+// Description:
+//    Error : cannot assign a int to a boolean
+//
+// Result:
+//    INVALID_CAST: Type \(.\)\+ cannot be cast to type \(.\)\+
+//    line 9
+{
+    int a = 1;
+    boolean b = a;
+}

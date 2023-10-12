@@ -1,0 +1,19 @@
+// Description:
+//    method call with wrong type parameter
+//
+// Result:
+//    INVALID_CAST: Type float cannot be cast to type int
+//    line 18
+
+class A {
+    protected int x;
+
+    void f(int y) {
+        this.x = y;
+    }
+}
+
+{
+    A a = new A();
+    a.f(2.3);
+}

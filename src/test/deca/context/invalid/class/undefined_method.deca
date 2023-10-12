@@ -1,0 +1,20 @@
+// Description:
+// 	  use new declaration in a method of an undefined type 
+//
+// Resultats:
+// 	UNDEFINED_METHOD: Method method_inconnu is undefined
+//  line 19
+// Historique:
+// 	  cree le 15/01/2023
+
+class B {
+    
+    protected float x;
+
+    void methodB() {
+    }
+}
+{
+    B objectB = new B();
+    objectB.method_inconnu();
+}

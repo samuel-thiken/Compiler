@@ -1,0 +1,18 @@
+// Description:
+//    Teste les conversions implicites du type int vers float
+//
+// Resultats:
+//    c : 1.00000e+00 / b : 4.00000e+00
+//
+// Historique:
+//    cree le 08/01/2023
+{
+    int a = 1;
+    float b = 3.0; 
+    float c = a; //cast implicite de int vers float lors d'une initialisation
+    
+    b = b + a; //cast implicite de int vers float dans une opération arithmétique
+    print("c : ", c);
+    print(" / ");
+    print("b : ", b);
+}

@@ -1,0 +1,19 @@
+// Description:
+// 	  Teste des appels à des méthodes dans une classe mère
+// 	
+// Resultats:
+// 	  1
+// Historique:
+// 	  cree le /01/2023
+class c_0 {
+    int var0 = 0;
+    int getVar0() { return this.var0; }
+}
+class c_1 extends c_0 {
+    int var1 = 1;
+    int getVar1() { return this.var1 + getVar0(); }
+}
+{
+    c_1 var = new c_1();
+    println(var.getVar1());
+}

@@ -1,0 +1,34 @@
+/// Description:
+// 	  Including the file Matrix.decah and doing medium complex operations on it
+// Resultats:
+// 	  On a bien : transposee(A*B) = transposee(B) * transposee(A)
+// Historique:
+// 	  cree le 21/01/2023
+
+#include "Matrix.decah"
+
+{
+    // object to access the Matrix file
+    Matrix matrix = new Matrix();
+    
+    float[][] tab1 = {{2, 1, 4, 8, 9}, {2, 1, 2, 8, -10}, {3, 4, 3, -2, 0.754}, {0.84, 2.8, 18, 23, -0.003}};
+    float[][] tab2 = {{1, 2, 3, -450, 3.8}, {4, 5, 6, -2, 1}, {7, 8, 9, 10.50, -18}, {8, 52.1, 9.3, 57, -18}};
+    
+    float[][] tab1_Transpose = matrix.transposee(tab1, 5, 5);
+    float[][] tab2_Transpose = matrix.transposee(tab2, 5, 5);
+
+    float[][] tab1_tab2_mult = matrix.multMat(tab1, 5, 5, tab2, 5, 5);
+
+    float[][] tab1_tab2_mult_Transpose = matrix.transposee(tab1_tab2_mult, 5, 5);
+    
+    float[][] tab2T_tab1T_mult = matrix.multMat(tab2_Transpose, 5, 5, tab1_Transpose, 5, 5);
+
+    boolean result = matrix.isMatricesEqual(tab1_tab2_mult_Transpose, 5, 5, tab2T_tab1T_mult, 5, 5);
+
+    if (result) {
+        print("On a bien : transposee(A*B) = transposee(B) * transposee(A)");
+    }
+    else {
+        print("bouhou trop nul votre calcul !");
+    }
+}

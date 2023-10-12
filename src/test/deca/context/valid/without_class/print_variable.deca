@@ -1,0 +1,12 @@
+// Description:
+//    Teste plusieurs types de prints
+//
+// Resultats:
+//    Ok
+//
+// Historique:
+//    cree le 08/01/2023
+{
+    int thisprotectedfloatprivate = 8;
+    println(thisprotectedfloatprivate);
+}

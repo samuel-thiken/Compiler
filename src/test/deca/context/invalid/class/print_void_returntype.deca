@@ -1,0 +1,17 @@
+/// Description:
+// 	  Test error syntax when printing a string which is the result of a method 
+// 	
+// Resultats:
+// 	  INCOMPATIBLE_TYPE_PARAMETER: Cannot assign type void as parameter of type printable
+//    line 16
+// Historique:
+// 	  cree le 19/01/2023
+
+class A {
+    void m() {
+    }
+}
+{
+    A objA = new A();
+    print(objA.m());
+}

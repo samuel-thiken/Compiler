@@ -1,0 +1,30 @@
+// Description:
+// 	  Vérification du fonctionnement paresseux de l'opérateur AND
+// 	
+// Resultats:
+// 	  0|5
+// Historique:
+// 	  cree le /01/2023
+
+class A {
+    protected int x ;
+    int getX() {
+        return x ;
+    }
+    boolean update() {
+        x = 5;
+        return true;
+    }
+}
+
+{
+    A a = new A();
+
+    if (false && a.update()) {}
+    print(a.getX());
+
+    print("|");
+
+    if (true && a.update()) {}
+    print(a.getX());
+ }

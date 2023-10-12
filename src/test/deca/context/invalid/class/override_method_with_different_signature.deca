@@ -1,0 +1,54 @@
+// Description:
+// 	  Override method with different parameters (number and type)
+//
+// Resultats:
+// 	  INVALID_METHOD_SIGNATURE_OVERRIDE: Override method initialize in class B doesn't have the same signature as in one of its superclasses
+//    line 30
+//
+// Historique:
+// 	  cree le 13/01/2023
+
+class A {
+    
+    protected int i;
+    void setI(int a) {
+        this.i = a;
+    }
+    int getI() {
+        return this.i;
+    }
+
+    void initialize(int i) {
+        this.i = i;
+    }
+}
+
+class B extends A {
+    protected boolean b;
+    protected float x;
+
+    void initialize(int i, boolean b, float x) {
+        this.i = i;
+        this.b = b;
+        this.x = x;
+    }
+}
+
+class C extends A {
+    protected int j;
+
+    void initialize(int i, int j) {
+        this.i = i;
+        this.j= j;
+    }
+}
+
+{
+    A objetA = new A();
+    B objetB = new B();
+    C objetC = new C();
+
+    objetA.initialize(1);
+    objetB.initialize(8, false, 8.8);
+    objetC.initialize(8, 9);
+}

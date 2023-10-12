@@ -1,0 +1,12 @@
+/// Description:
+// 	  test syntax error missing one operand in binary op
+//
+// Resultats:
+// 	  Syntax Error
+//    line 11
+// Historique:
+// 	  cree le 14/01/2023
+{
+    float f = 0.54;
+    f = +1.54; //unary plus does not exist
+}

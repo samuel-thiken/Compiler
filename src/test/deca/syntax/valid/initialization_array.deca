@@ -1,0 +1,10 @@
+// Description:
+// 	  Array declaration with initializtion
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 11/01/2023
+
+{
+    int tab[2][3] = {{{1}, {2}, 3}, {4, 5, 6}};
+}

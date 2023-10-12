@@ -1,0 +1,51 @@
+// Description:
+// 	  invalid signature override method
+// 	
+// Resultats:
+//      INVALID_METHOD_SIGNATURE_OVERRIDE: Override method initialize in class B doesn't have the same signature as in one of its superclasses
+//      line 32
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    
+    protected int i;
+    protected int j;
+
+    void setI(int a) {
+        this.i = a;
+    }
+    
+    int getI() {
+        return this.i;
+    }
+
+    void initialize(int i) {
+        this.i = this.y;
+    }
+}
+
+class B extends A {
+    protected boolean b;
+    protected float x;
+
+    void initialize(int i, int y) {
+        this.i = i + y;
+    }
+
+    float operation(float y) {
+        return this.x + y;
+    }
+    
+}
+
+{
+    A objetA = new A();
+    B objetB = new B();
+
+    objetA.initialize(1);
+    objetB.initialize(8, 6);
+
+    print(objetB.operation(5.5)); // result has to be 6.5
+
+}

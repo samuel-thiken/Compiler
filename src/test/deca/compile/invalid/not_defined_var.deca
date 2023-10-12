@@ -1,0 +1,11 @@
+// Description:
+// 	  Teste d'afficher une variable qui n'existe pas
+// Resultats:
+// 	  
+//      UNDEFINED_VAR: Variable \(.\)\+ is undefined
+//      line 10
+// Historique:
+// 	  cree le 13/01/2023
+{
+    println(x);
+}

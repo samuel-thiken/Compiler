@@ -1,0 +1,22 @@
+/// Description:
+// 	  
+// 	
+// Resultats:
+// 	  ok
+//  
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {}
+
+class Class extends A {
+    boolean x = true && false || ((0 != 1) && (1 > 38));
+    A asmMethod()
+        asm("hehoooooooooooooo");
+} 
+
+class SecondClass extends Class {
+    boolean x = (1+549 - 3.0f) > 4.0000000000f;
+    SecondClass asmMethod()
+        asm("valid override");
+}

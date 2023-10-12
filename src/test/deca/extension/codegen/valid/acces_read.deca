@@ -1,0 +1,10 @@
+/// Description:
+// 	  Test when accessing a simple array
+// Resultats:
+// 	  12
+// Historique:
+// 	  cree le 21/01/202
+{
+    int[2] tab = {3, 12};
+    print(tab[1]);
+}

@@ -1,0 +1,13 @@
+// Description:
+//    Teste lecture d'un float avec un entier en entrée
+//
+// Resultats:
+//    Result : 4.00000e+00
+//
+// Historique:
+//    cree le 11/01/2023
+
+{
+    float a = readInt();
+    print("Result : ", a);
+}

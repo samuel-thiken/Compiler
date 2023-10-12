@@ -1,0 +1,19 @@
+// Description:
+//    Opérations simples (test de base pour l"opération C)
+//
+// Resultats:
+//    my_int : 7c : 5a : 1d : 0x1p+2
+//
+// Historique:
+//    cree le 09/01/2023
+{
+    int my_int = readInt();
+    int a = 1;
+    int b = 3;
+    int c = 1 + a + b;
+    float d = 4.0;
+    print("my_int : ", my_int);
+    print("c : ", c);
+    print("a : ", a);
+    printx("d : ", d);
+}

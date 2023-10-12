@@ -1,0 +1,23 @@
+// Description:
+// 	  Création d'un getter/setter basique
+// 	
+// Resultats:
+// 	  0 3
+// Historique:
+// 	  cree le 18/01/2023
+class A {
+    int a;
+    void set(int a) {
+        this.a = a;
+    }
+    int get() {
+        return a;
+    }
+}
+
+{
+    A a = new A();
+    print(a.get(), " ");
+    a.set(3);
+    println(a.get());
+}

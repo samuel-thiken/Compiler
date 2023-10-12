@@ -1,0 +1,10 @@
+// Description :
+//    Test de l'inclusion de fichier avec le fichier Math.decah
+//
+// Result :
+//  
+//
+// Historique:
+//    cree le 08/01/2023
+
+#include "Math.decah"

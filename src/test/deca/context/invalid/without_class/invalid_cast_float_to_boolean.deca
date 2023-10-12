@@ -1,0 +1,10 @@
+// Description:
+//    Error : not possible to cast a boolean to a float
+//
+// Result:
+//    INVALID_CAST: Type boolean cannot be cast to type float
+//    line 9
+{
+    boolean a = true;
+    float b = a;
+}

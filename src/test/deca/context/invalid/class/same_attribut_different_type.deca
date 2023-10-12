@@ -1,0 +1,16 @@
+/// Description:
+// 	  Test of an error syntax when defining two field with the same name inside a class
+// 
+// Resultats:
+//  ALREADY_DEFINED_FIELD: Field attribut is already defined
+//  line 11
+//   Historique:
+// 	  cree le 19/01/2023
+class Animal {
+    int attribut;
+    float attribut;
+}
+
+{
+    ;
+}

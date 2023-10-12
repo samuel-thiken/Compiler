@@ -1,0 +1,38 @@
+// Description:
+//    Error using < to compare different objects 
+//
+// Result:
+//    INCOMPATIBLE_TYPE_OPERATOR: Type objectB is incompatible with type objectA for the operator <
+//    line 35
+
+class objectA {
+    int i;
+    float x;
+
+    void setA(int i, float x) {
+        this.x = x;
+        this.i = i;
+    }
+}
+
+class objectB {
+    int y;
+    boolean b;
+
+    void setB(int y, boolean b){
+        this.y = y;
+        this.b= b;
+    }
+}
+
+{
+    objectA a = new objectA();
+    objectB b = new objectB();
+    boolean isTrue = true;
+    a.setA(1, 2.2);
+    b.setB(3, isTrue);
+
+    if (a < b) {
+        return 0;
+    }
+}

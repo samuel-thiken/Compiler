@@ -1,0 +1,36 @@
+// Description:
+//    Teste différents affichages d'entier et flottants
+//
+// Resultats:
+//    3.00000e+00 / 0x1.4p+2 / -5.00000e+00 / -0x1.4p+2 / Hello world / Hello world / 3 / 3 / 3 / 3
+//
+// Historique:
+//    cree le 08/01/2023
+{
+    float a = 3.0;
+    int b = 3;
+
+    print(a); // print float var
+    print(" / ");
+    printx(a + 3.0 + (-1.0)); // print hex float var
+    print(" / ");
+    print(3.0 - 4.0 * 4.0 / 2.0); // print float immediate
+    print(" / ");
+    printx(3.0 - 4.0 * 4.0 / 2.0); // print hex float immediate
+    
+    print(" / ");
+
+    print("Hello world"); // print string
+    print(" / ");
+    printx("Hello world"); // print hex string -> same thing
+    
+    print(" / ");
+    
+    print(b); // print int var
+    print(" / ");
+    printx(b); // print hex int var -> same thing
+    print(" / ");
+    print(3); // print int immediate 
+    print(" / ");
+    printx(3); // print hex int immediate -> same thing
+}

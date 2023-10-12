@@ -1,0 +1,9 @@
+// Description:
+// 	  Error : two definitions for the same class type
+//
+// Resultats:
+// 	  ALREADY_DEFINED_CLASS: Class Object is already defined
+//    line 9
+// Historique:
+// 	  cree le 13/01/2023
+class Object {}

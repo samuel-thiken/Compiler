@@ -1,0 +1,29 @@
+// Description:
+// 	  Infinity fibonacci...! (fancy bug)
+// 	
+// Resultats:
+// 	  Stack overflow
+//    line 16
+// Historique:
+// 	  cree le 19/01/2023
+
+class Fibonacci {
+
+    int computeFibo(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        return computeFibo(n-1) + computeFibo(n-2);
+    }
+}
+
+class classTestFibo extends Fibonacci {
+    void main() {
+        print("Ooops...", computeFibo(-3));
+    }
+}
+
+{
+    classTestFibo fib = new classTestFibo();
+    fib.main();
+}

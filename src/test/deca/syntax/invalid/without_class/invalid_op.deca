@@ -1,0 +1,11 @@
+// Description:
+//    invalid operator ++
+//
+// Result:
+//    Syntax Error
+//    line 10
+
+{
+    int i = 0;
+    i++;
+}

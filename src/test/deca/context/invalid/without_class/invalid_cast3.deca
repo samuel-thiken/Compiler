@@ -1,0 +1,9 @@
+// Description:
+//    Test readFloat storing it into a int   	  
+//
+// Resultats:
+//    INVALID_CAST: Type \(.\)\+ cannot be cast to type \(.\)\+ 
+//    line 8
+{
+    int entry = readFloat();
+}

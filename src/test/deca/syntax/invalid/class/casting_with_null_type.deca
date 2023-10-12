@@ -1,0 +1,23 @@
+/// Description:
+// 	  casting with null type
+// 	
+//  Resultats:
+//    Syntax error
+//    line 22
+// Historique:
+// 	  cree le 16/01/2023
+class A {
+    void f() {}
+}
+class B extends A {
+    protected int x;
+    void f() {
+        this.x = 3;
+    }
+}
+
+{
+    B obj1 = new B();
+    A obj2 = new A();
+    obj2 = (null) (obj1);
+}

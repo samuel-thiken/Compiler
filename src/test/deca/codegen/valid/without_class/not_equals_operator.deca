@@ -1,0 +1,29 @@
+// Description:
+//    Teste la table de vérité de l'opérateur not equals (!=)
+//
+// Resultats:
+//    1!=1 : false / 1!=0 : true / 0!=1 : true / 0!=0 : false
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    boolean a, b;
+
+    a = true; b = true;
+    if (a != b) { print("1!=1 : true"); } else { print("1!=1 : false"); }
+
+    print(" / ");
+    
+    a = true; b = false;
+    if (a != b) { print("1!=0 : true"); } else { print("1!=0 : false"); }
+
+    print(" / ");
+
+    a = false; b = true;
+    if (a != b) { print("0!=1 : true"); } else { print("0!=1 : false"); }
+
+    print(" / ");
+    
+    a = false; b = false;
+    if (a != b) { print("0!=0 : true"); } else { print("0!=0 : false"); }
+}

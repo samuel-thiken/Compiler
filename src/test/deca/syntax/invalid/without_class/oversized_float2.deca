@@ -1,0 +1,11 @@
+/// Description:
+// 	  test syntax error oversized float
+//
+// Resultats:
+// 	  FLOAT_OVERFLOW_EXCEPTION: The float could not be parsed (probably because it's too large)
+//    line 10
+// Historique:
+// 	  cree le 14/01/2023
+{
+    float f = 1.0e40;
+}

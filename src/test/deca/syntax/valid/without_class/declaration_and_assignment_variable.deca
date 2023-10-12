@@ -1,0 +1,15 @@
+// Description :
+//    test syntax floats (decimal & heximal)
+//
+// Resultats :
+//    ok
+//
+// Historique:
+//    cree le 14/01/2023
+
+{
+    float f = 056456.2434e-10;
+    float f = 0X35.AFp-10F;
+    int a = 4;
+    boolean b = ((a < f && true) || false) != true;
+}

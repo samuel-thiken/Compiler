@@ -1,0 +1,26 @@
+// Description:
+//    test complex conditions in while loop
+//
+// Resultats:
+// 	  a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/a est plus petit que b et b est plus petit que c ou a + b est égal à c/
+// Historique:
+//    cree le 14/01/2023
+{
+    int a = 5;
+    int b = 10;
+    int c = 15;
+    int d = 20;
+    int i = 0;
+    int n = 10;
+    while (((i < n) && (a < b)) || ((i < 5) && (b < c)) || ((i < 15) && (c < d))) {
+        if ((a < b) && (b < c) || ((a + b) == c)) {
+            print("a est plus petit que b et b est plus petit que c ou a + b est égal à c");
+        } else if ((a > b) && (b > c) && ((c * a) != (b * b))) {
+            print("a est plus grand que b et b est plus grand que c et c * a est différent de b * b");
+        } else {
+            print("Autre cas");
+        }
+        print("/");
+        i = i + 1;
+    }
+}

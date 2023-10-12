@@ -1,0 +1,48 @@
+// Description:
+//    Teste tous les types d'opérateurs binaires booléens (&&, ||, ==, !=)
+//
+// Resultats:
+//    a : false / b : true / c : false / d : true
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    boolean a = true && false; //false
+    boolean b = true || false; //true
+    boolean c = a==b; //false
+    boolean d = a!=b; //true
+
+    if (a) {
+        print("a : true");
+    }
+    else {
+        print("a : false");
+    }
+
+    print(" / ");
+
+    if (b) {
+        print("b : true");
+    }
+    else {
+        print("b : false");
+    }
+
+    print(" / ");
+
+    if (c) {
+        print("c : true");
+    }
+    else {
+        print("c : false");
+    }
+
+    print(" / ");
+
+    if (d) {
+        print("d : true");
+    }
+    else {
+        print("d : false");
+    }
+}

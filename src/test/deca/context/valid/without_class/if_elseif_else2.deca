@@ -1,0 +1,15 @@
+// Description:
+//    Teste un autre type de condition booléenne (assign) dans une boucle if/else
+//
+// Result:
+//    
+//
+// Historique:
+//    cree le 10/01/2023
+{
+    boolean x = false;
+    boolean y = true;
+    if (x = y) {
+        print("Ne devrait jamais passer par ici");
+    }
+}

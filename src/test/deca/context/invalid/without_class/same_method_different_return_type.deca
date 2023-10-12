@@ -1,0 +1,25 @@
+// Description:
+//    Error: same method different return type
+//
+// Result:
+//    INVALID_METHOD_NAME: A method cannot have the same name as an existing field or method in the same class
+//    line 16
+
+class Animal {
+    int attribut;
+    float x;
+
+    int method() {
+        return 1;
+    }
+
+    float method() {
+        return 1.1;
+    }
+}
+
+{
+    Animal elt = new Animal();
+
+    return elt.method();
+}

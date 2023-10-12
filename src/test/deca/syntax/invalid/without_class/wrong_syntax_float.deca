@@ -1,0 +1,12 @@
+/// Description:
+// 	  Test error float syntax (a dot is missing)
+//
+// Resultats:
+// 	  Syntax Error
+//    line 11
+// 
+// Historique:
+// 	  cree le /01/2023
+{
+    float f = 1e10; //missing a dot
+}

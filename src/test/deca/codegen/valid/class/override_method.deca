@@ -1,0 +1,26 @@
+// Description:
+// 	  Teste d'override une fonction
+// 	
+// Resultats:
+// 	  AB
+// Historique:
+// 	  cree le /01/2023
+class A {
+    void f() {
+        print("A");
+    }
+
+}
+
+class B extends A {
+    void f() {
+        println("B");
+    }
+}
+
+{
+    A a = new A();
+    B b = new B();
+    a.f();
+    b.f();
+}

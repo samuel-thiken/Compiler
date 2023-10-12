@@ -1,0 +1,11 @@
+// Description:
+// 	  Mix of full and empty bracket in array declaration
+// Resultats:
+// 	  Syntax Error
+//    line 10
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int tab[][2];
+}

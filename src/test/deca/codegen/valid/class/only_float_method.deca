@@ -1,0 +1,24 @@
+// Description:
+// 	  Crée un objet avec des méthodes qui renvoient 0 (flottant)
+// 	
+// Resultats:
+// 	  0.00000e+00 0.00000e+00
+// Historique:
+// 	  cree le 18/01/2023
+class A {
+
+    float getFloatZero() {
+        return 0.0;
+    }
+
+    float getFloatZeroVar() {
+        float zero = 0;
+        return zero;
+    }
+
+}
+
+{
+    A a = new A();
+    println(a.getFloatZero(), " ", a.getFloatZeroVar());
+}

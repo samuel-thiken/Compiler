@@ -1,0 +1,12 @@
+// Description:
+//    Teste une instruction vide dans un main
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 14/01/2023
+{
+    ; //empty instruction
+    print("ok");
+}

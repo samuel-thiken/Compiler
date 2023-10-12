@@ -1,0 +1,48 @@
+//// Description:
+// 	  composition de method  
+// 	
+// Resultats:
+// 	  8
+// Historique:
+// 	  cree le /01/2023
+
+class A {
+
+    protected int i;
+
+    int method1 (int i) {
+        return i;
+    }
+
+    int m2(int i) { 
+        return i;
+    }
+    int m3(int i) { 
+        return i;
+    }
+    int m4(int i) { 
+        return i;
+    }
+    int m5(int i) { 
+        return i;
+    }
+    int m6(int i) { 
+        return i;
+    }
+    int m7(int i) { 
+        return i;
+    }
+
+    void initI(int y) {
+        this.i = method1( m2( m3( m4( m5( m6( m7(y) ) ) ) ) ) );
+    }
+    int getI() {return this.i;}
+}
+
+{
+    A a = new A();
+    a.initI(8);
+    print(a.getI());
+
+
+}

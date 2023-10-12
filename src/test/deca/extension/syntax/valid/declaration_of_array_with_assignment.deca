@@ -1,0 +1,20 @@
+/// Description:
+// 	  Array declaration with assignment
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 11/01/2023
+{
+    int[3][3] tab = {  {1, {2}, 3},  {1, 2, 3},  {{1}, {2}, 3} };
+    float[2] tab1 = {0, 0};
+    float[1][2][3] tab2 = {   { {1,2,3}, {1,2,3} }  };
+    float[1][2][3] tab3 = {  {1,2,3}, {1,2,3}  };
+    int N = 12;
+    int M = 13;
+    int[N] tab4 = {1};
+    int[N][M][N] tab5 = tab4;
+    float[][] tab6 = {{1.0}};
+    int a;
+    int b;
+    int[a + b][N * M][2] tab7 = {{{1, 2, 3}, {3, 4, 5}}};
+}

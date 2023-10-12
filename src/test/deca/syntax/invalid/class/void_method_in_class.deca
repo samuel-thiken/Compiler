@@ -1,0 +1,15 @@
+/// Description:
+// 	  Test error with a void method in a class 
+// 
+//  Resultats:
+//    Syntax error
+//    line 12
+// Historique:
+// 	  cree le 18/01/2023
+class A {
+    protected int i;
+
+    {
+
+    }
+}

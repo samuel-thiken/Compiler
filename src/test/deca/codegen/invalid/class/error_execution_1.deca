@@ -1,0 +1,21 @@
+// Description:
+// 	  Lance une erreur à l'exécution (test du sujet)
+// 	
+// Resultats:
+// 	  Erreur : Sortie de la méthode Q.abs sans return
+//    line 10
+// Historique:
+// 	  cree le 18/01/2023
+class Q {
+    float abs(float x) {
+        if(x < 0.0) {
+            return -x;
+        }
+    }
+}
+
+{
+    Q q = new Q();
+    float y = 1.0;
+    println(q.abs(y));
+}

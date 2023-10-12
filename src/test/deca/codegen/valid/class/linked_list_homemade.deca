@@ -1,0 +1,90 @@
+/// Description:
+// 	  Program implemeting a linked list in Deca and some basic use of linked lists.
+// 	
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 21/01/2023
+
+
+
+class LinkedList {
+    Cell head;
+
+    void addFirst(int val) {
+        Cell newCell = new Cell();
+        newCell.next = head;
+        newCell.value = val;
+        head = newCell;
+    }
+
+    void addLast(int val) {
+        Cell newCell = new Cell();
+        
+        Cell currentCell = head;
+        while (currentCell.next != null) {
+            currentCell = currentCell.next;
+        }
+
+        newCell.value = val;
+        newCell.next = null;
+
+        currentCell.next = newCell;
+    }
+
+    void delete(int val) {
+        Cell currentCell = head;
+        while (currentCell.next.value != val) {
+            currentCell = currentCell.next;
+        }
+        currentCell.next = currentCell.next.next;
+    }
+
+    void printLinkedList() {
+        Cell currentCell = head;
+        while (currentCell.next != null) {
+            print("[", currentCell.value, "] -> ");
+            currentCell = currentCell.next;
+        }
+        print("[", currentCell.value, "]");
+    }
+
+    int getSize() {
+        int count = 0;
+        Cell currentCell = head;
+        while (currentCell != null) {
+            count = count + 1;
+            currentCell = currentCell.next;
+        }
+        return count;
+    }
+
+}
+
+class Cell {
+    int value;
+    Cell next;
+}
+
+class TestLinkedList {
+    void main() {
+        LinkedList list = new LinkedList();
+        list.addFirst(0);
+        list.addFirst(2);
+        list.addLast(3);
+        list.addFirst(-8);
+        list.addFirst(3*2-7/3);
+        list.delete(0);
+
+        if (list.getSize() == 4) {
+            print("ok ! Voici la liste : ");
+            list.printLinkedList();
+        } else {
+            print("problème...");
+        }
+    }
+}
+{
+    TestLinkedList test = new TestLinkedList();
+    test.main();
+}

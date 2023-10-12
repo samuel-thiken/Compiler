@@ -1,0 +1,44 @@
+{
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "type": "tag"
+        },
+        "FIXME": {
+            "foreground": "black",
+            "background": "yellow",
+            "iconColour": "yellow",
+            "gutterIcon": true
+        },
+        "DANGER": {
+            "background": "red",
+            "foreground": "black"
+        },
+        "BUG": {
+            "background": "red",
+            "foreground": "black"
+        },
+        "WARN": {
+            "foreground": "black",
+            "background": "yellow",
+            "iconColour": "yellow",
+            "gutterIcon": true
+        }
+    },
+    "todo-tree.general.tags": [
+        "WARN",
+        "DANGER",
+        "TODO",
+        "FIXME",
+        "BUG"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "todo-tree.tree.scanMode": "workspace",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    }
+}

@@ -1,0 +1,21 @@
+// Description:
+//    Error using < to compare different objects 
+//
+// Result:
+//    INVALID_CAST: Type float cannot be cast to type boolean
+//    line 13
+
+class objectA {
+    int i;
+    float x;
+
+    boolean methodA() {
+        return 2.2;
+    }
+}
+
+
+{
+    objectA a = new objectA();
+    a.methodA();
+}

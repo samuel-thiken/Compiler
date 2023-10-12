@@ -1,0 +1,13 @@
+// Description:
+//    Tests de programme incorrect lexicalement (chaine non terminee)
+//
+// Resultats:
+//    Syntax Error
+//    line 12
+//
+// Historique:
+//    cree le 06/01/2023
+
+{
+    print("salut);
+}

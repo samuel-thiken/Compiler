@@ -1,0 +1,25 @@
+/// Description:
+// 	  Test for syntax call with overriden method
+// 	
+// Resultats:
+// 	  2
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+        void f() {
+            print("1");
+        }
+}
+
+class B extends A {
+        void f() {
+            print("2");
+        }
+}
+
+{
+    B objB = new B();
+    A objA = (A) (objB);
+    objA.f();
+}

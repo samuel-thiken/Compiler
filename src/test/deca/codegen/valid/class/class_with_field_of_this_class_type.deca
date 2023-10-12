@@ -1,0 +1,24 @@
+// Description:
+// 	  Redéfinition de la méthode equals
+// 	
+// Resultats:
+// 	  B is Ok
+// Historique:
+// 	  cree le /01/2023
+
+class A {
+    protected boolean statut;
+}
+
+class B extends A {
+    protected A objA;
+    protected B objB;
+}
+
+{
+    A element = new A();
+    B elt = new B();
+    if (elt instanceof B) {
+        println("B is Ok");
+    }
+}

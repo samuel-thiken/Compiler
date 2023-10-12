@@ -1,0 +1,27 @@
+/// Description:
+// 	  Test syntax of classes
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 12/01/2023
+
+class A {
+    B b;
+}
+
+class B {
+    A a;
+}
+
+class Parcours {
+    void parcoursA(A a) {
+        if (a != null) {
+            parcoursB(a.b);
+        }
+    }
+    void parcoursB(B b) {
+        if (b != null) {
+            parcoursA(b.a);
+        }
+    }
+}

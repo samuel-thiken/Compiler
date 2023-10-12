@@ -1,0 +1,19 @@
+// Description:
+// 	  Ce programme calcule une approximation de sqrt(10)
+// 	
+// Resultats:
+//  3.16201e+00
+// Historique:
+// 	  cree le /01/2023
+{
+    float a = 3;
+    float b = 4;
+    float a_temp = b;
+    float diff = a_temp - a;
+    while(diff > 0.01 || diff < -0.01) {
+        a_temp = a;
+        a = a - (b-a)/((b*b-10)-(a*a-10))*(a*a - 10);
+        diff = a_temp - a;
+    }
+    println(a);
+}

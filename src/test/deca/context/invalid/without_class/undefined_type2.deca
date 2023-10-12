@@ -1,0 +1,9 @@
+// Description:
+//    Declaring variable with an unknown/wrong type  
+//
+// Result:
+//     UNDEFINED_TYPE: Type \(.\)\+ is undefined
+//     line 8
+{
+     string x; //string type isn't a builtin type!
+}

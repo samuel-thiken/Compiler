@@ -1,0 +1,36 @@
+// Description :
+//    Test de la syntaxe de la boucle if/else
+//
+// Result :
+//    dans le else
+//
+// Historique:
+//    cree le 08/01/2023
+{
+    int my_int = 13;
+    int i = 13083874;
+    if (1 < 1) {
+        println("a");
+    } else if (1 < -1) {
+        println("a");
+    } else if (1 <= -1) {
+        println("b");
+    } else if (1 != 1) {
+        println("c");
+    } else if (i < i) {
+        println("d");
+    } else if (i < -i) {
+        println("e");
+    } else if (i <= -i) {
+        println("f");
+    } else if (---- ---- ---- ---- ---- i==i) {
+        println("A");
+   }
+    if (my_int % 3 == 0) {
+        print("dans le if");
+    } else if (my_int + 1 == 2) {
+        print("dans le else if");
+    } else {
+        print("dans le else");
+    }
+}

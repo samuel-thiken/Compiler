@@ -1,0 +1,14 @@
+// Description :
+//    test de la syntaxe if then else
+//
+// Resultats :
+//    ok
+//
+// Historique:
+//    cree le 08/01/2023
+{
+    int a = 8;
+    while (a != 0) {
+        a = a - 1;
+    }
+}

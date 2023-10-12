@@ -1,0 +1,31 @@
+// Description:
+// 	  Une opération complexe pour forcer le système à utiliser la pile
+// 	
+// Resultats:
+// 	  x = 2.09228e+13 y = 2.09228e+13
+// Historique:
+// 	  cree le /01/2023
+{
+    float a = 1;
+    float b = 2;
+    float c = 3;
+    float d = 4;
+    float e = 5;
+    float f = 6;
+    float g = 7;
+    float h = 8;
+    float i = 9;
+    float j = 10;
+    float k = 11;
+    float l = 12;
+    float m = 13;
+    float n = 14;
+    float o = 15;
+    float p = 16;
+
+    float y = a * b * c * d * e * f * g * h * i * j * k * l * m * n * o * p;
+    float x = a * (b * (c * (d * (e * (f * (g * (h * (i * (j * (k * (l * (m * (n * (o * p))))))))))))));
+
+    print("x = ", x);
+    print(" y = ", y);
+}

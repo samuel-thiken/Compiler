@@ -1,0 +1,12 @@
+/// Description:
+// 	  Instructions inside a class are not allowed
+// 	
+// Resultats:
+// 	  Syntax Error
+//    line 11
+// Historique:
+// 	  cree le 19/01/2023
+
+class A {
+    print("not working");
+}

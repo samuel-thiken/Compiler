@@ -1,0 +1,15 @@
+/// Description:
+// 	  Test classes with asm body method
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 18/01/2023
+class A {
+    protected boolean x;
+    void myAsmBody()
+        asm("LOAD
+        WORDS 
+        SOMETHING R1, R2
+        OTHER SOMETHING");
+}
+

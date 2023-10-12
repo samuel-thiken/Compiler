@@ -1,0 +1,14 @@
+/// Description:
+// 	  Syntax for a suit of assigns
+// 	
+// Resultats:
+// 	  Syntax error
+//    line 12
+// Historique:
+// 	  cree le 19/01/2023
+
+{
+    int a = 0;
+    a = -1 = 8 = -3 = 19;
+    print(a);
+}

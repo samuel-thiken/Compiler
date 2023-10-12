@@ -1,0 +1,10 @@
+// Description:
+//    error in argument of print function
+//
+// Result:
+//     no viable alternative at input 'World'
+//     line 9
+
+{
+    print(Hello World);
+}

@@ -1,0 +1,40 @@
+// Description:
+// 	  Un test des profs qui utilise l'héritage
+// 	
+// Resultats:
+// 	  p3.z = 5
+// Historique:
+// 	  cree le /01/2023
+
+class Point2D {
+    int x;
+    int y;
+    void diag(int a) {
+        x = x + a;
+        y = y + a;
+    }
+}
+
+class Point3D extends Point2D {
+    int z;
+    void diag(int a) {
+        x = x + a;
+        y = y + a;
+        z = z + a;
+    }
+}
+
+{
+    Point2D p1, p2;
+    Point3D p3;
+
+    p1 = new Point2D();
+    p1.diag(1);
+
+    p3 = new Point3D();
+    p3.diag(2);
+
+    p2 = p3;
+    p2.diag(3);
+    println("p3.z = ", p3.z);
+}

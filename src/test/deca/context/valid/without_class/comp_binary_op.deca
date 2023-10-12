@@ -1,0 +1,15 @@
+// Description:
+//    Teste tous les types d'opérateurs binaires de comparaison (>, >=, <, <=, ==, !=)
+//
+// Result:
+//    
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    int a = -3;
+    int b = 8;
+    boolean c = a <= b; //true
+    boolean d = 0 != 1; //true
+    boolean e = a==0 || a != 2; //true
+}

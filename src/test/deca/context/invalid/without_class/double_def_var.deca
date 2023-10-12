@@ -1,0 +1,12 @@
+// Description:
+// 	  Teste la création de deux variables ayant le même type et nom.
+//
+// Resultats:
+// 	ALREADY_DEFINED_VAR: Variable \(.\)\+ is already defined
+//  line 11
+// Historique:
+// 	  cree le 13/01/2023
+{
+    int x;
+    int x;
+}

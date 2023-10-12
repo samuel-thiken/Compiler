@@ -1,0 +1,11 @@
+// Description:
+// 	  Teste l'overflow entre deux entiers (valide)
+// Resultats:
+//
+//
+// Historique:
+// 	  cree le /01/2023
+{
+    int x = 2147483647;
+    int z = x + x;
+}

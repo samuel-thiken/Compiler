@@ -1,0 +1,12 @@
+// Description:
+// 	  Teste de print un boolean
+// Resultats:
+//
+// 	  INCOMPATIBLE_TYPE_PARAMETER: Cannot assign type \(.\)\+ as parameter of type \(.\)\+
+//    line 11
+// Historique:
+// 	  cree le /01/2023
+{
+    boolean a = true;
+    println(a);
+}

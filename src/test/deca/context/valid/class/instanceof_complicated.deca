@@ -1,0 +1,19 @@
+/// Description:
+// 	  Syntax for a complicated instance of 
+// 	
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 18/01/2023
+class A { }
+class B extends A { }
+class C extends B { }
+{
+    A a;
+    B b;
+    a = new C();
+    if (a instanceof B) {
+        b = (B)(a);
+        println("ok");
+    }
+}

@@ -1,0 +1,14 @@
+// Description:
+// 	  Teste la génération de la gestion des erreurs dans le code deca
+//
+// Resultats:
+//  
+// Historique:
+// 	  cree le 14/01/2023
+{
+    int x = 1;
+    int y = 0;
+    int z = x / y;
+    int k = x % y;
+    int a = readInt();
+}

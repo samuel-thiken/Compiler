@@ -1,0 +1,21 @@
+/// Description:
+// 	  Test syntax error when trying to access a protected field inside a class that doesn't extend the field's class
+// 	
+// Resultats:
+// 	  CANNOT_ACCESS_PROTECTED_FIELD: The protected field x cannot be accessed from class X as X doesn't extends B
+//    line 19
+// Historique:
+// 	  cree le 16/01/2023
+
+class B {
+    protected int x;
+}
+
+class A extends B {}
+
+class X {
+    void m() {
+        A a = new A();
+        println(a.x) ; // Erreur contextuelle : x est protege
+    }
+}

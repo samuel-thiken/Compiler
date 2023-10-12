@@ -1,0 +1,8 @@
+// Description :
+//    Testing include with a non existent file
+//
+// Result:
+//    Circular include for file \(.\)\+
+//    line 8
+
+#include "circular_include.deca"

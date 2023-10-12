@@ -1,0 +1,11 @@
+// Description:
+//    Error : operator equals not defined with type boolean
+//
+// Result:
+//    INCOMPATIBLE_TYPE_OPERATOR: Type \(.\)\+ is incompatible with type \(.\)\+ for the operator \(.\)\+
+//    line 10
+{
+    float a = 1.0;
+    boolean c = true;
+    boolean result = a >= c; 
+}

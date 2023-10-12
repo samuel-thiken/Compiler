@@ -1,0 +1,23 @@
+// Description:
+//    Teste plusieurs types de prints
+//
+// Resultats:
+//    Hello
+//
+// Historique:
+//    cree le 08/01/2023
+{
+    float a = 3.0;
+    int b = 4;
+    int c = 8;
+
+    print(""); //saut de ligne
+    println(""); //même chose
+    println(""); //même chose
+    printlnx(""); //même chose
+
+    println(a);
+    printx(a); //affiche a en hexadecimal -> 0x40400000
+    print("a-b : ", a-b); //teste d'une soustraction (expression) dans un print
+    print("b - c % b", b - c % b );
+}

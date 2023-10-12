@@ -1,0 +1,20 @@
+/// Description:
+// 	  Syntax for a method that will use a conversion from int to float in a return type
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 17/01/2023
+
+class A {
+    protected int x = 5;
+}
+class B extends A {
+    float g() {
+        return this.x;
+    }
+}
+
+{
+    B obj = new B();
+    float f = obj.g();
+}

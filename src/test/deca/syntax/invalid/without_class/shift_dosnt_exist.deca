@@ -1,0 +1,11 @@
+/// Description:
+// 	  test syntax error in binary op
+//
+// Resultats:
+// 	  Syntax Error
+//    line 10
+// Historique:
+// 	  cree le 14/01/2023
+{
+    float a = 14 >> 1;
+}

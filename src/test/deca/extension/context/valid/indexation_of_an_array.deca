@@ -1,0 +1,17 @@
+// Description:
+// 	  Indexation d'un tableau
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 16/01/2023
+
+{
+    int n = 2;
+    int m = 1;
+    int[3][2][2] tab = {{{2, 3}, {5, 7}}, {{11, 13}, {17, 19}}, {{23, 29}, {31, 37}}};
+    int element = tab[1][1][0];
+    int[2] sous_tab = tab[n][m];
+    tab[0][0][0] = 3;
+    sous_tab[0] = element;
+    tab[0][m] = sous_tab;
+}

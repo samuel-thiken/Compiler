@@ -1,0 +1,27 @@
+// Description:
+//    Test comparison operator with cast
+//
+// Result:
+//   
+//
+// Historique:
+//    cree le 11/01/2023
+{
+    boolean test = 2.0 >= 4;
+    float a = 8.0;
+    int b = 4;
+
+    if (a != b) {
+        print("Conversion Ok");
+    }
+
+    if (a >= b) {
+        print("Conversion Ok");
+    }
+
+    if (a < b) {
+        print("Problem comparison between int and float");
+    }
+
+
+}

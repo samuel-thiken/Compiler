@@ -1,0 +1,11 @@
+/// Description:
+// 	  test syntax error oversized int
+//
+// Resultats:
+// 	  INTEGER_OVERFLOW_EXCEPTION: The integer could not be parsed (probably because it's too large)
+//    line 10
+// Historique:
+// 	  cree le 14/01/2023
+{
+    int a = 4680654323213546876565;
+}

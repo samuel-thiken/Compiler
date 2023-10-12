@@ -1,0 +1,11 @@
+/// Description:
+// 	  Test of a syntax error when defining a class inside a main
+// 
+//  Resultats:
+//    Syntax error
+//    line 10
+// Historique:
+// 	  cree le 18/01/2023
+{
+    class Animal {}
+}

@@ -1,0 +1,10 @@
+// Description:
+//    Program with missing closing brace in main
+//
+// Result:
+//    Syntax  Error
+//    line 11
+
+
+{
+    int x = 0;

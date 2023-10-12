@@ -1,0 +1,10 @@
+// Description:
+//    Error : cannot assign a boolean type to an int type
+//
+// Result:
+//    INCOMPATIBLE_TYPE_ASSIGN: Cannot assign type \(.\)\+ to variable of type \(.\)\+
+//    line 9
+{
+    int b;
+    b = true;
+}

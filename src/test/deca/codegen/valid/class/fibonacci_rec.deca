@@ -1,0 +1,25 @@
+// Description:
+// 	  Compute the fibonacci suit at rank n in a RECURSIVE METHOD !! (fancy)
+// 	
+// Resultats:
+// 	  First: 610 / Second: 21
+// Historique:
+// 	  cree le 19/01/2023
+
+class Fibonacci {
+
+    int computeFibo(int n) {
+        if (n == 0 || n == 1) {
+            return n;
+        }
+        return computeFibo(n-1) + computeFibo(n-2);
+    }
+}
+
+{
+    float float = 15.0f; // float named float on purpose
+    Fibonacci myFibo = new Fibonacci();
+    print("First: ", myFibo.computeFibo( (int) (float) ) );
+    print(" / ");
+    print("Second: ", myFibo.computeFibo(8));
+}

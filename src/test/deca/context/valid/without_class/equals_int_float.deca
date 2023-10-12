@@ -1,0 +1,15 @@
+// Description:
+// 	  Teste l'égalité int = float 
+// Resultats:
+// 	  OUI
+// Historique:
+// 	  cree le 13/01/2023
+{
+    int x = 1;
+    float y = 2.0;
+    if(x == y) {
+        println("NON");
+    } else {
+        println("OUI");
+    }
+}

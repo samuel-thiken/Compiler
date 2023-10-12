@@ -1,0 +1,15 @@
+/// Description:
+// 	  Test invalid syntax variable already defined by a parameter inside a method body
+// 	
+// Resultats:
+// 	  ALREADY_DEFINED_VAR: Variable a is already defined
+//    line 13
+// Historique:
+// 	  cree le 19/01/2023
+
+class maclasse {
+    int a;
+    void f(int a) {
+        int a;
+    }
+}

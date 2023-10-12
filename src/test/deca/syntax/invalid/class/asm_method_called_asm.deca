@@ -1,0 +1,13 @@
+/// Description:
+// 	  Test syntax with a method with an asm body called asm
+// 	
+// Resultats:
+// 	  Syntax error
+//    line 11
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    void asm()
+        asm("Hello");
+}

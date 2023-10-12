@@ -1,0 +1,138 @@
+/// Description:
+// 	  Test to use some principles of inheritance in Deca
+// 	
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 21/01/2023
+
+#include "zoo.decah"
+
+class Zoo {
+    LinkedList animals = new LinkedList();
+
+    int getNbAnimals() {
+        return animals.getSize();
+    }
+
+    void addAnimal(Animal animal) {
+        animals.addFirst(animal);
+    }
+
+    void costAnimals() {
+        int count = 0;
+        Cell currentAnimal = animals.head;
+        while (currentAnimal != null) {
+            count = count + currentAnimal.a.countNourriture();
+            currentAnimal = currentAnimal.next;
+        }
+        print("total : ", count, " kg !");
+    }
+
+    void crier() {
+        Cell currentAnimal = animals.head;
+        while (currentAnimal != null) {
+            currentAnimal.a.crier();
+            currentAnimal = currentAnimal.next;
+        }
+    }
+
+}
+class Animal {
+    protected int poids = 5;
+    protected Regime regime = new Regime();
+
+    int countNourriture() {
+        return regime.getPrixKg();
+    }
+
+    void crier() {
+        print("crie...");
+    }
+
+    void init(int p, int r) {
+        poids = p;
+        regime.setPrixKg(r);
+    }
+}
+
+class Regime {
+    protected int prixKg = 1;
+
+    int getPrixKg() {
+        return prixKg;
+    }
+
+    void setPrixKg(int p) {
+        prixKg = p;
+    } 
+}
+
+class Tigre extends Animal {
+ 
+    void crier() {
+        print("Le gros tigre, Simba, rugit");
+    }
+}
+
+class Lion extends Animal {
+
+    void init(int p, int r) {
+        poids = p;
+        regime.setPrixKg(-38);
+
+    }
+}
+
+class Vache extends Animal {
+    protected int nbTaches;
+
+    void initVache(int p, int r, int n){
+        poids = p;
+        this.regime.setPrixKg(r);
+        this.nbTaches = n; // mixing of the two writing (with or without 'this')
+    }
+
+    int getNbTaches() {
+        return nbTaches;
+    }
+
+    int countNourriture() {
+        return regime.getPrixKg() * this.nbTaches;
+    }
+
+    void crier() {
+        print("La grosse vache, Mariolle, meugle");
+    }
+}
+
+class TestZoo {
+    void main() {
+        Vache vache = new Vache();
+        Tigre tigrou = new Tigre();
+        Lion lion = new Lion();
+        Animal v = vache;
+        Zoo ensimag = new Zoo();
+
+        ensimag.addAnimal(new Lion());
+        vache.initVache(150, 13, 3);
+        tigrou.init(120, 10);
+        lion.init(140, 16);
+
+        print("Faisons crier la vache Mariolle deux fois : ");
+        vache.crier();
+        v.crier();
+
+        print(" / ");
+        print("Maintenant tout le zoo...");
+        ensimag.crier();
+        ensimag.costAnimals();
+        
+    }
+}
+
+{
+    TestZoo test = new TestZoo();
+    test.main();
+}
+

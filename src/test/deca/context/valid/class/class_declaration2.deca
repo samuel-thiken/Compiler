@@ -1,0 +1,37 @@
+/// Description:
+// 	  Test of contextual syntax for classes
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le 12/01/2023
+class A {
+    protected int x;
+
+    void setX(int x) {
+        this.x = x;
+    }
+
+    int getX() {
+        return this.x;
+    }
+
+    void init() {
+        this.x = 0;
+    }
+}
+
+class B extends A {
+    int y;
+    void init() {
+        setX(0);
+        y=0;
+    }
+}
+
+class C extends A {
+    int z;
+    void init() {
+        setX(0);
+        z = 1;
+    }
+}

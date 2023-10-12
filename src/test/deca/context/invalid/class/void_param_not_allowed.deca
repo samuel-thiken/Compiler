@@ -1,0 +1,11 @@
+// Description:
+// 	  Testing the contextual error associated with a void parameter inside a signature method
+//
+// Resultats:
+// 	VOID_PARAM_NOT_ALLOWED: Parameter \(.\)\+ cannot be of type void
+//  line 10
+// Historique:
+// 	  cree le 15/01/2023
+class A {
+    void f(int a, void b) {}
+}

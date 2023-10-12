@@ -1,0 +1,14 @@
+/// Description:
+// 	  Use of an implicit selection inside method body
+// 	
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 19/01/2023
+
+class A {
+    int a = 4;
+    void printField() {
+        print(a); // ok
+    }
+}

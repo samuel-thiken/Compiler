@@ -1,0 +1,11 @@
+// Description:
+// 	  Indexation on undefined variable
+// Resultats:
+// 	  UNDEFINED_VAR: Variable A is undefined
+//    line 10
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int[2] tab = {1, A[3]};
+}

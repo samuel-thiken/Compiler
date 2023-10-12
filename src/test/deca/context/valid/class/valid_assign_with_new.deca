@@ -1,0 +1,17 @@
+/// Description:
+// 	  Cast non accepted in Deca when declaring a new instance of a class
+//
+// Resultats:
+//  ok
+// Historique:
+// 	  cree le 17/01/2023
+
+class A {
+    protected boolean x = true;
+}
+class B extends A {
+}
+
+{
+    A obj = new B(); // ok as B is a subtype of A
+}

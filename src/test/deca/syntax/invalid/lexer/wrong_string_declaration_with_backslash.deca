@@ -1,0 +1,11 @@
+// Description:
+//    Error declaring a string with '\' character  
+//
+// Result:
+//    Syntax Error
+//    line 9
+
+{   
+    print("Ensimag\"); // correct one is "Ensimag\\"
+    return 0;
+}

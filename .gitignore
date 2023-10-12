@@ -1,0 +1,14 @@
+target/
+docker/
+bin/
+
+src/main/antlr4/fr/ensimag/deca/syntax/.antlr/
+
+*.res
+*.lis
+*.ass
+.obsidian/
+
+*-decompiled.deca
+
+.vscode/launch.json

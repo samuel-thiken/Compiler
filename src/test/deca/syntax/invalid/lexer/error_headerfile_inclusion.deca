@@ -1,0 +1,12 @@
+//Description:
+//      Syntax error to include a file/librairy simple brackets instead of double
+//
+// Result:
+//     Syntax Error
+//     line 8
+
+#include 'Maths.decah'
+
+{
+    return 0;
+}

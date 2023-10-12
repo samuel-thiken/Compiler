@@ -1,0 +1,11 @@
+/// Description:
+// 	  test syntax error when underflow occurs on a float
+//
+// Resultats:
+// 	  FLOAT_OVERFLOW_EXCEPTION: The float could not be parsed (probably because it's too large or too small)
+//    line 10
+// Historique:
+// 	  cree le 14/01/2023
+{
+    float f = -2.0e-46f;
+}

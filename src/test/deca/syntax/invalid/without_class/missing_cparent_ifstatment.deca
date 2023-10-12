@@ -1,0 +1,14 @@
+// Description:
+//    Missing closing parentesis in if statment 
+//
+// Result:
+//    Syntax Error
+//    line 11
+
+
+{
+    int x = 1;
+    if(x > 0 {
+        return x;
+    }
+}

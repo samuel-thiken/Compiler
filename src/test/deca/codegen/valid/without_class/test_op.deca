@@ -1,0 +1,21 @@
+// Description:
+//    Test of multiple operations with parenthese
+//
+// Resultats:
+// 	  ok / result: 200
+// Historique:
+//    cree le 14/01/2023
+{
+    int a = 5;
+    int b = 10;
+    int c = 15;
+    int result = ((a + b) * c) - ((b - a) * (c % b));
+    float f1 = 0X5FAb8c.9F8fBbp-18f;
+    float f2 = 0X5FAb8c.9F8fBbp18f;
+    float f3 = 0X5FAb8c.9F8fBbp+18f;
+
+    if (f2==f3) {
+        print("ok");
+    }
+    println(" / result: ", result);
+}

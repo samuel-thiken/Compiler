@@ -1,0 +1,21 @@
+/// Description:
+// 	  Syntax of cast inside an initialization
+//
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 17/01/2023
+class A {
+    void f() {}
+}
+class B extends A {
+    protected int x;
+    void f() {
+        this.x = 3;
+    }
+}
+
+{
+    B objB = new B();
+    A objA = (A) (objB);
+}

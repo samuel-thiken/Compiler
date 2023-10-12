@@ -1,0 +1,10 @@
+// Description:
+// 	  Déclaration d'un tableau
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int[2][3][4][5][6][7][8] tab;
+}

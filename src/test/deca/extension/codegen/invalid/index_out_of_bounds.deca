@@ -1,0 +1,11 @@
+// Description:
+// 	  Indexation of array out of bounds
+// Resultats:
+// 	  
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int[4][2] tab = {{1, 2}, {3, 7}, {4, 3}, {5, 7}};
+    int a = tab[3][2];
+}

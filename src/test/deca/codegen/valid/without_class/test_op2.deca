@@ -1,0 +1,18 @@
+// Description:
+//    Test for multiple operations
+//
+// Resultats:
+// 	  result: 35
+// Historique:
+//    cree le 14/01/2023
+{
+    int a = 5;
+    int b = 10;
+    int c = 15;
+    int d = 20;
+    int e = 25;
+    int f = 30;
+
+    int result = a + b - c * d / e % f + d - c * b / a % e + f - e * d / c % b + a - b * f / e % d + c - d * a / f % b - e + f * e / a % d;
+    println("result: ", result);
+}

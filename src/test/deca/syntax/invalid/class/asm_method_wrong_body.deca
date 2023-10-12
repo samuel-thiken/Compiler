@@ -1,0 +1,14 @@
+/// Description:
+// 	  Test syntax with a method with an asm body with an instruction between the method name and the asm() call
+// 	
+// Resultats:
+// 	  Syntax error
+//    line 11
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    void asm()
+        print("WRONG")
+        asm("Hello");
+}

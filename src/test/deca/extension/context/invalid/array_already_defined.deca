@@ -1,0 +1,12 @@
+// Description:
+// 	  Array already defined
+// Resultats:
+// 	  ALREADY_DEFINED_VAR: Variable tab is already defined
+//    line 11
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int[5] tab = {1, 2, 3, 4, 5};
+    boolean[1][2] tab = {{true, false}};
+}

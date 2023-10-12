@@ -1,0 +1,11 @@
+// Description:
+//    Error in array declaration (unexpected ',')
+//
+// Result:
+//     Syntax Error
+//     line 10
+
+
+{
+    int[2] arr = {2, 2,};
+}

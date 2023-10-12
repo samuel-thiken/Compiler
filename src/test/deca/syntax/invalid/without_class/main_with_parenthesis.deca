@@ -1,0 +1,11 @@
+// Description:
+//    Error in main block   
+//
+// Result:
+//    Syntax Error
+//    line 8
+
+(
+    int a = 0;
+    return a;
+)

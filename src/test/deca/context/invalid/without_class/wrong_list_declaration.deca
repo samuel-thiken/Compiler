@@ -1,0 +1,10 @@
+// Description:
+//    Error in use of list declaration with ; instead of ,
+//
+// Result:
+//    UNDEFINED_VAR: Variable y is undefined
+//    line 9
+
+{    
+    float x; y; z;
+}

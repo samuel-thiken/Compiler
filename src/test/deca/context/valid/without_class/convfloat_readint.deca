@@ -1,0 +1,10 @@
+/// Description:
+// 	  test syntax of convfloat when given a read int
+// Resultats:
+// 	  ok
+//
+// Historique:
+// 	  cree le 14/01/2023
+{
+    float f = readInt();
+}

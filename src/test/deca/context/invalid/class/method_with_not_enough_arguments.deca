@@ -1,0 +1,20 @@
+// Description:
+//    method call with wrong number of parameter
+//
+// Result:
+//    INVALID_NB_PARAMETERS: Invalid number of parameters for the call of method f
+//    line 19
+
+class A {
+    protected int x;
+
+    void f(int y, float z) {
+        this.x = y;
+    }
+}
+
+{
+    A a = new A();
+    boolean b = true;
+    a.f(2);
+}

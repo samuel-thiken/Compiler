@@ -1,0 +1,9 @@
+/// Description:
+// 	  Error : superClass isn't a type Class
+//
+// Resultats:
+// 	  INCOMPATIBLE_TYPE_EXTENDS: Class \(.\)\+ cannot extends type \(.\)\+
+//    line 9
+// Historique:
+// 	  cree le 13/01/2023
+class A extends int {}

@@ -1,0 +1,15 @@
+// Description:
+//    Error using cast operator () between two objects 
+//
+// Result:
+//    no viable alternative at input 'objectB'
+//    line 14
+
+
+class A {}
+class B extends A {}
+
+{
+    B objectB = new B();
+    A objectA = A objectB;
+}

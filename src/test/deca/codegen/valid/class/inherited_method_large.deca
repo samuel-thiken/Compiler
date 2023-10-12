@@ -1,0 +1,374 @@
+// Description:
+// 	  Teste l'héritage de méthodes avec beaucoup d'objets
+// 	
+// Resultats:
+// 	  0123440
+// Historique:
+// 	  cree le 19/01/2023
+
+class c_0 {
+    int var_0 = 0;
+    int getVar_0() {
+        return this.var_0;
+    }
+}
+
+class c_1 extends c_0 {
+    int var_1 = 1;
+    int getVar_1() {
+        return this.var_1;
+    }
+}
+
+class c_2 extends c_1 {
+    int var_2 = 2;
+    int getVar_2() {
+        return this.var_2;
+    }
+}
+
+class c_3 extends c_2 {
+    int var_3 = 3;
+    int getVar_3() {
+        return this.var_3;
+    }
+}
+
+class c_4 extends c_3 {
+    int var_4 = 4;
+    int getVar_4() {
+        return this.var_4;
+    }
+}
+
+class c_5 extends c_4 {
+    int var_5 = 5;
+    int getVar_5() {
+        return this.var_5;
+    }
+}
+
+class c_6 extends c_5 {
+    int var_6 = 6;
+    int getVar_6() {
+        return this.var_6;
+    }
+}
+
+class c_7 extends c_6 {
+    int var_7 = 7;
+    int getVar_7() {
+        return this.var_7;
+    }
+}
+
+class c_8 extends c_7 {
+    int var_8 = 8;
+    int getVar_8() {
+        return this.var_8;
+    }
+}
+
+class c_9 extends c_8 {
+    int var_9 = 9;
+    int getVar_9() {
+        return this.var_9;
+    }
+}
+
+class c_10 extends c_9 {
+    int var_10 = 10;
+    int getVar_10() {
+        return this.var_10;
+    }
+}
+
+class c_11 extends c_10 {
+    int var_11 = 11;
+    int getVar_11() {
+        return this.var_11;
+    }
+}
+
+class c_12 extends c_11 {
+    int var_12 = 12;
+    int getVar_12() {
+        return this.var_12;
+    }
+}
+
+class c_13 extends c_12 {
+    int var_13 = 13;
+    int getVar_13() {
+        return this.var_13;
+    }
+}
+
+class c_14 extends c_13 {
+    int var_14 = 14;
+    int getVar_14() {
+        return this.var_14;
+    }
+}
+
+class c_15 extends c_14 {
+    int var_15 = 15;
+    int getVar_15() {
+        return this.var_15;
+    }
+}
+
+class c_16 extends c_15 {
+    int var_16 = 16;
+    int getVar_16() {
+        return this.var_16;
+    }
+}
+
+class c_17 extends c_16 {
+    int var_17 = 17;
+    int getVar_17() {
+        return this.var_17;
+    }
+}
+
+class c_18 extends c_17 {
+    int var_18 = 18;
+    int getVar_18() {
+        return this.var_18;
+    }
+}
+
+class c_19 extends c_18 {
+    int var_19 = 19;
+    int getVar_19() {
+        return this.var_19;
+    }
+}
+
+class c_20 extends c_19 {
+    int var_20 = 20;
+    int getVar_20() {
+        return this.var_20;
+    }
+}
+
+class c_21 extends c_20 {
+    int var_21 = 21;
+    int getVar_21() {
+        return this.var_21;
+    }
+}
+
+class c_22 extends c_21 {
+    int var_22 = 22;
+    int getVar_22() {
+        return this.var_22;
+    }
+}
+
+class c_23 extends c_22 {
+    int var_23 = 23;
+    int getVar_23() {
+        return this.var_23;
+    }
+}
+
+class c_24 extends c_23 {
+    int var_24 = 24;
+    int getVar_24() {
+        return this.var_24;
+    }
+}
+
+class c_25 extends c_24 {
+    int var_25 = 25;
+    int getVar_25() {
+        return this.var_25;
+    }
+}
+
+class c_26 extends c_25 {
+    int var_26 = 26;
+    int getVar_26() {
+        return this.var_26;
+    }
+}
+
+class c_27 extends c_26 {
+    int var_27 = 27;
+    int getVar_27() {
+        return this.var_27;
+    }
+}
+
+class c_28 extends c_27 {
+    int var_28 = 28;
+    int getVar_28() {
+        return this.var_28;
+    }
+}
+
+class c_29 extends c_28 {
+    int var_29 = 29;
+    int getVar_29() {
+        return this.var_29;
+    }
+}
+
+class c_30 extends c_29 {
+    int var_30 = 30;
+    int getVar_30() {
+        return this.var_30;
+    }
+}
+
+class c_31 extends c_30 {
+    int var_31 = 31;
+    int getVar_31() {
+        return this.var_31;
+    }
+}
+
+class c_32 extends c_31 {
+    int var_32 = 32;
+    int getVar_32() {
+        return this.var_32;
+    }
+}
+
+class c_33 extends c_32 {
+    int var_33 = 33;
+    int getVar_33() {
+        return this.var_33;
+    }
+}
+
+class c_34 extends c_33 {
+    int var_34 = 34;
+    int getVar_34() {
+        return this.var_34;
+    }
+}
+
+class c_35 extends c_34 {
+    int var_35 = 35;
+    int getVar_35() {
+        return this.var_35;
+    }
+}
+
+class c_36 extends c_35 {
+    int var_36 = 36;
+    int getVar_36() {
+        return this.var_36;
+    }
+}
+
+class c_37 extends c_36 {
+    int var_37 = 37;
+    int getVar_37() {
+        return this.var_37;
+    }
+}
+
+class c_38 extends c_37 {
+    int var_38 = 38;
+    int getVar_38() {
+        return this.var_38;
+    }
+}
+
+class c_39 extends c_38 {
+    int var_39 = 39;
+    int getVar_39() {
+        return this.var_39;
+    }
+}
+
+class c_40 extends c_39 {
+    int var_40 = 40;
+    int getVar_40() {
+        return this.var_40;
+    }
+}
+
+class c_41 extends c_40 {
+    int var_41 = 41;
+    int getVar_41() {
+        return this.var_41;
+    }
+}
+
+class c_42 extends c_41 {
+    int var_42 = 42;
+    int getVar_42() {
+        return this.var_42;
+    }
+}
+
+class c_43 extends c_42 {
+    int var_43 = 43;
+    int getVar_43() {
+        return this.var_43;
+    }
+}
+
+class c_44 extends c_43 {
+    int var_44 = 44;
+    int getVar_44() {
+        return this.var_44;
+    }
+}
+
+class c_45 extends c_44 {
+    int var_45 = 45;
+    int getVar_45() {
+        return this.var_45;
+    }
+}
+
+class c_46 extends c_45 {
+    int var_46 = 46;
+    int getVar_46() {
+        return this.var_46;
+    }
+}
+
+class c_47 extends c_46 {
+    int var_47 = 47;
+    int getVar_47() {
+        return this.var_47;
+    }
+}
+
+class c_48 extends c_47 {
+    int var_48 = 48;
+    int getVar_48() {
+        return this.var_48;
+    }
+}
+
+class c_49 extends c_48 {
+    int var_49 = 49;
+    int getVar_49() {
+        return this.var_49;
+    }
+}
+
+class c_50 extends c_49 {
+    int var_50 = 50;
+    int getVar_50() {
+        return this.var_50;
+    }
+}
+
+{
+    c_50 var = new c_50();
+    print(var.getVar_0());
+    print(var.getVar_1());
+    print(var.getVar_2());
+    print(var.getVar_3());
+    print(var.getVar_4());
+    println(var.getVar_40());
+}

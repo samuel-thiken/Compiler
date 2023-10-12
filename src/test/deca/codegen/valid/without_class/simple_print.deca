@@ -1,0 +1,23 @@
+// Description:
+//    Déclarations et initialisations et affichages simples (test de base pour l'opération C)
+//
+// Resultats:
+//    -1 / -1  / 102 / a : 1 / d : 0x1p+2
+//
+// Historique:
+//    cree le 09/01/2023
+{
+    int val;
+    int a = 1;
+    float d = 4.0;
+    val = -1;
+    print(val);
+    print(" / ");
+    print(-1);
+    print(" / ");
+    print(1 - 10 + 37 * 3);
+    print(" / ");
+    print("a : ", a);
+    print(" / ");
+    printlnx("d : ", d);
+}

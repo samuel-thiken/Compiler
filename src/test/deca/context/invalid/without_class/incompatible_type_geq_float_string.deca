@@ -1,0 +1,10 @@
+// Description:
+//    Error : operator equals not defined with type string
+//
+// Result:
+//    INCOMPATIBLE_TYPE_OPERATOR: Type \(.\)\+ is incompatible with type \(.\)\+ for the operator \(.\)\+
+//    line 9
+{
+    float a = 1.0;
+    boolean result = a >= "Hello"; 
+}

@@ -1,0 +1,60 @@
+// Description:
+// 	  invalid signature override method
+// 	
+// Resultats:
+//      Syntax error
+//      line 40
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    
+    protected int i;
+    protected int j;
+
+    void setI(int a) {
+        this.i = a;
+    }
+
+    void setJ(int a) {
+        this.j = a;
+    }
+
+    int getI() {
+        return this.i;
+    }
+
+
+    int getJ() {
+        return this.j;
+    }
+}
+
+class B extends A {
+    protected boolean b;
+     float x;
+     int y;
+
+    void method() {
+        print(x, " ------------ ",y);
+        this.this.x = this.y;
+    }
+
+    void initialize(int i) {
+        this.i = i + y;
+    }
+
+    float operation(float y) {
+        return this.x + y;
+    }
+    
+}
+
+{
+    B objetB = new B();
+    objetB.setI(8);
+    objetB.setJ(6);
+    objetB.x = 8.3;
+    objetB.y = 7;
+    objetB.method();
+}

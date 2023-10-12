@@ -1,0 +1,25 @@
+//// Description:
+// 	  Initialization of an attribut with a method 
+// 	
+// Resultats:
+// 	  6
+// Historique:
+// 	  cree le 21/01/2023
+
+class A {
+
+    int i = init(6);
+
+    int init(int i) {
+        return i;
+    }
+
+    int getI() { return this.i;}
+}
+
+{
+    A a = new A();
+    print(a.getI());
+
+
+}

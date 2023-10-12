@@ -1,0 +1,121 @@
+// Grenoble INP - Ensimag projet GL -*- mode: java -*-
+// Library for class Math of Deca, coded in Deca
+
+class Math {
+    float sin(float f) {
+        println("sin(f) not yet implemented");
+    }
+    float cos(float x) {
+        float pix2=6.28318530717958;
+        float pi=3.14159265358979;
+        float pid2=1.57079632679489;
+        float pid4=0.785398163397448;
+        float pid8=0.392699081698724;
+        float c8=0.923879532511286;
+        float s8=0.382683432365089;
+
+        float cc = 1;
+        float cs = 0;
+        float sc = 0;
+        float ss = 1;
+        float h;
+
+        float ch;
+        float d;
+        float n;
+        float h2;
+        float hn;
+        float t;
+
+        float sh;
+
+        float y;
+        float z;
+
+        float eps = 5;
+
+        while(x > pi) {
+            x = x - pix2;
+        }
+        while(x <= -pi) {
+            x = x + pix2;
+        }
+    
+        if(x > pid2) {
+            x = x - pi; 
+            cc = -cc;
+            ss = -ss;
+        } else if(x < -pid2) {
+            x = x + pi;
+            cc = -cc;
+            ss = -ss;
+        }
+        
+        if(x > pid4) {
+            x = x - pid2;
+            cs = -cc;
+            cc = 0.0;
+            sc = ss;
+            ss = 0.0;
+        } else if(x < -pid4) {
+            x = x + pid2;
+            cs = cc;
+            cc = 0.0;
+            sc = -ss;
+            ss = 0.0;
+        }
+    
+        h = x - pid8; 
+        ch = 1.0;
+        d = 1.0;
+        n = 0.0;
+        h2 = h*h;
+        hn = 1.0;
+        t = eps + 1.0;
+    
+        while(t > eps || t < -eps) {
+            n = n + 2;
+            hn = hn * h2;
+            d = d*(n-1)*n;
+            ch = ch - hn/d;
+    
+            n = n + 2;
+            hn = hn * h2;
+            d = d*(n-1)*n;
+            t = hn/d;
+            ch = ch + t;
+        }
+    
+        sh = h;
+        d = 1.0;
+        n = 1.0;
+        hn = h;
+    
+        while(t > eps || t < -eps) {
+            n = n+2;
+            hn = hn*h2;
+            d = d*(n-1)*n;
+            sh = sh - hn/d;
+            n = n+2;
+            hn = hn*h2;
+            d = d*(n-1)*n;
+            t = hn/d;
+            sh = sh + t;
+        }
+    
+        y = (cc*ch + cs*sh)*c8-(sc*ch+ss*sh)*s8;
+        return y;
+    }
+    float asin(float f) {
+        println("asin(f) not yet implemented");
+    }
+    float atan(float f) {
+        println("atan(f) not yet implemented");
+    }
+    float ulp(float f) {
+        println("ulp(f) not yet implemented");
+    }
+}
+
+
+// End of Deca Math library

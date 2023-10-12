@@ -1,0 +1,5 @@
+class Object {
+    boolean equals(Object obj) {
+        return this == obj;
+    }
+}

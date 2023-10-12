@@ -1,0 +1,13 @@
+/// Description:
+// 	  Test syntax with a method with an asm body with a missing semi colon
+// 	
+// Resultats:
+// 	  Syntax error
+//    line 13
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    A Hello()
+        asm("Hello")
+}

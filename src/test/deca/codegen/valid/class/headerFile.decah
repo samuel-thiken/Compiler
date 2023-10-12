@@ -1,0 +1,42 @@
+// This is an header file for headerFile_test.deca
+
+class A {
+    protected int i;
+    protected float x;
+    protected boolean b;
+
+    float sumParamIfTrue() {
+        if (this.b) {
+            return this.i + this.x;
+        }
+        else {
+            return 0;
+        }
+    }  
+
+    void setI(int i) {
+        this.i = i;
+    }  
+
+    void setX(float x) {
+        this.x = x;
+    }
+
+    void setB(boolean b) {
+        this.b = b;
+    }
+}
+
+class B {
+    protected A objA = new A();
+
+    void setA(int i, float x, boolean b) {
+        this.objA.setI(i);
+        this.objA.setX(x) ;
+        this.objA.setB(b);
+    }
+
+    A getObjetA() {
+        return this.objA;
+    }
+}

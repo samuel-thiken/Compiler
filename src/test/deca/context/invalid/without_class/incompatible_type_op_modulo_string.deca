@@ -1,0 +1,11 @@
+// Description:
+//    Error : operator modulo not defined with string type
+//
+// Result:
+//    INCOMPATIBLE_TYPE_OPERATOR: Type \(.\)\+ is incompatible with type \(.\)\+ for the operator \(.\)\+
+//    line 8
+{
+    print("hello"%4);
+}
+
+    

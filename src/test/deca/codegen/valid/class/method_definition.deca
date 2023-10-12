@@ -1,0 +1,37 @@
+/// Description:
+// 	  Test of syntax when overriding a method and declaring a same field (same type and same name) inside a subclass
+// 	
+// Resultats:
+// 	  5 / -33 / -33 / 5
+// Historique:
+// 	  cree le 17/01/2023
+class A {
+    int x = -33;
+    void f() {}
+    int y;
+    void g() {}
+    int getX() {
+        return this.x;
+    }
+}
+class B extends A {
+    int z;
+    void f() {}
+    void h() {}
+    int x = 5;
+    int getX() {
+        return this.x;
+    }
+}
+
+{
+    B objB = new B();
+    A objA = new A();
+    print(objB.x);
+    print(" / ");
+    print(objA.x);
+    print(" / ");
+    print(objA.getX());
+    print(" / ");
+    print(objB.getX());
+}

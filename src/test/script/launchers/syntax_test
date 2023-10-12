@@ -1,0 +1,109 @@
+#! /bin/bash
+
+DECAC_HOME=$(cd "$(dirname "$0")"/../../../../ && pwd)
+OUTPUT="$DECAC_HOME"/src/test/script/output
+CP_FILE="$DECAC_HOME"/target/generated-sources/classpath.txt
+CP="$DECAC_HOME"/target/test-classes/:"$DECAC_HOME"/target/classes/:$(cat "$CP_FILE")
+DECA_FILES="$DECAC_HOME"/src/test/deca
+VALID_TEST_FILES="$DECA_FILES/syntax/valid/without_class/*.deca $DECA_FILES/context/valid/without_class/*.deca $DECA_FILES/codegen/valid/without_class/*.deca $DECA_FILES/syntax/valid/class/*.deca $DECA_FILES/context/valid/class/*.deca $DECA_FILES/codegen/valid/class/*.deca $DECA_FILES/context/invalid/without_class/*.deca $DECA_FILES/codegen/invalid/without_class/*.deca $DECA_FILES/context/invalid/class/*.deca $DECA_FILES/codegen/invalid/class/*.deca"
+VALID_TEST_FILES_FOR_EXTENSION="$DECA_FILES/extension/syntax/valid/*.deca $DECA_FILES/extension/context/valid/*.deca $DECA_FILES/extension/codegen/valid/*.deca $DECA_FILES/extension/context/invalid/*.deca $DECA_FILES/extension/codegen/invalid/*.deca"
+INVALID_TEST_FILES="$DECA_FILES/syntax/invalid/without_class/*.deca $DECA_FILES/syntax/invalid/class/*.deca"
+INVALID_TEST_FILES_FOR_EXTENSION="$DECA_FILES/extension/syntax/invalid/*.deca"
+
+# Missing or bad argument
+if [ "$1" ]; then
+    if [ ! "$1" = "-t" ] && [ ! "$1" = "-a" ]; then
+        echo "Error argument : the only parameters expected are -a or -t"
+        exit 1
+    fi
+fi
+
+if [ "$1" = "-t" ]; then
+    VALID_TEST_FILES="$VALID_TEST_FILES_FOR_EXTENSION"
+    INVALID_TEST_FILES="$INVALID_TEST_FILES_FOR_EXTENSION"
+elif [ "$1" = "-a" ]; then
+    VALID_TEST_FILES="$VALID_TEST_FILES_FOR_EXTENSION $VALID_TEST_FILES"
+    INVALID_TEST_FILES="$INVALID_TEST_FILES_FOR_EXTENSION $INVALID_TEST_FILES"
+fi
+
+# Creation of test outputs directory if they don't exist
+if [[ ! -d "$DECAC_HOME/src/test/script/output/syntax/valid/" ]]; then
+    mkdir -p "$DECAC_HOME/src/test/script/output/syntax/valid/"
+fi
+if [[ ! -d "$DECAC_HOME/src/test/script/output/syntax/invalid/" ]]; then
+    mkdir -p "$DECAC_HOME/src/test/script/output/syntax/invalid/"
+fi
+
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+BLUE='\033[1;34m'
+GREY='\033[1;30m'
+NC='\033[0m' # No Color
+
+exec_tests() {
+    name=$(basename "$2")
+
+    if [ ! "$name" = "*.deca" ]; then
+        ((t = t + 1))
+
+        java -enableassertions -cp "$CP" fr.ensimag.deca.syntax.ManualTestSynt "$i" >"$OUTPUT"/syntax/"$1"/"${name%.deca}".lis 2>&1
+        code_exit=$?
+
+        # Test failed or succeed
+        if [[ $code_exit -eq 0 && "$1" = "valid" ]] || [[ $code_exit -eq 1 && "$1" = "invalid" ]]; then
+            if [ "$1" = "invalid" ]; then
+                result_line=$(cat $2 | grep -Fn "// Resultats:" | cut --delimiter=":" --fields=1)
+                if [ ! $result_line ]; then
+                    result_line=$(cat $2 | grep -Fn "// Result:" | cut --delimiter=":" --fields=1)
+                fi
+                ((result_line = result_line + 2))
+                line=$(sed "${result_line}q;d" "$2")
+                line=$(echo $line | cut -c 9-)
+                if cat "$OUTPUT"/syntax/"$1"/"${name%.deca}".lis | grep -q "$name:$line:[0-9]\+:"; then
+                    echo -e "$name - ${GREEN}SUCCEED${NC} - ${GREY}Exiting code : $code_exit${NC}"
+                else
+                    echo -e "$name - ${RED}FAILED${NC} - ${GREY}Exiting code : $code_exit${NC}"
+                    echo -e "    ${YELLOW}$OUTPUT/syntax/$1/${name%.deca}.lis to see the error message${NC}"
+                    ((f = f + 1))
+                fi
+            else
+                echo -e "$name - ${GREEN}SUCCEED${NC} - ${GREY}Exiting code : $code_exit${NC}"
+            fi
+        else
+            echo -e "$name - ${RED}FAILED${NC} - ${GREY}Exiting code : $code_exit${NC}"
+            echo -e "    ${YELLOW}$OUTPUT/syntax/$1/${name%.deca}.lis to see the error message${NC}"
+            ((f = f + 1))
+        fi
+    else
+        echo "No test files"
+    fi
+}
+
+t=0 # Number of tests
+f=0 # Number of tests failed
+
+echo ""
+echo "executable: test_synt"
+
+echo ""
+echo -e "${BLUE}---------------------------------------"
+echo -e "         TEST VALID FILES              "
+echo -e "---------------------------------------${NC}"
+for i in $VALID_TEST_FILES; do
+    exec_tests valid $i
+done
+
+echo ""
+echo -e "${BLUE}---------------------------------------"
+echo -e "        TEST INVALID FILES             "
+echo -e "---------------------------------------${NC}"
+for i in $INVALID_TEST_FILES; do
+    exec_tests invalid $i
+done
+
+s=0
+((s = t - f))
+echo ""
+echo -e "Total tests : $t - ${GREEN}Succeed : $s ${NC}- ${RED}Failed : $f${NC}"

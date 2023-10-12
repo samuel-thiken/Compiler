@@ -1,0 +1,14 @@
+// Description:
+//    Error usign control structure if, else, else if
+//
+// Result:
+//    mismatched input ','
+//    line 11
+
+{
+    int x = 1;
+    int y = 2;
+    if (x,y){
+        print("Error");
+    }
+}

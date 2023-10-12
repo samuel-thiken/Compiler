@@ -1,0 +1,18 @@
+// Description :
+//    test de la syntaxe if then else
+//
+// Resultats :
+//    ok
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    int a = 7;
+    if (a % 2 == 0) {
+        print("Divisible par 2");
+    } else if ( a%3 == 0) {
+        print("Divisible par 3");
+    } else {
+        print("Divisible ni par 2, ni par 3");
+    }
+}

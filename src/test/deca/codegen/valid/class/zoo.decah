@@ -1,0 +1,50 @@
+// This is an header file for zoo.deca
+
+class LinkedList {
+    Cell head;
+
+    void addFirst(Animal animal) {
+        Cell newCell = new Cell();
+        newCell.next = head;
+        newCell.a = animal;
+        head = newCell;
+    }
+
+    void addLast(Animal animal) {
+        Cell newCell = new Cell();
+        
+        Cell currentCell = head;
+        while (currentCell.next != null) {
+            currentCell = currentCell.next;
+        }
+
+        newCell.a = animal;
+        newCell.next = null;
+
+        currentCell.next = newCell;
+    }
+
+    void delete(Animal animal) {
+        Cell currentCell = head;
+        while (currentCell.next.a != animal) {
+            currentCell = currentCell.next;
+        }
+        currentCell.next = currentCell.next.next;
+    }
+
+    int getSize() {
+        int count = 0;
+        Cell currentCell = head;
+        while (currentCell != null) {
+            count = count + 1;
+            currentCell = currentCell.next;
+        }
+        return count;
+    }
+
+}
+
+class Cell {
+    Animal a;
+    Cell next;
+}

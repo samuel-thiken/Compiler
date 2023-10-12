@@ -1,0 +1,43 @@
+// Description:
+//    Medley (if and while imbriqués dans un programme)
+//
+// Resultats:
+// 	  a est plus petit que b et b est plus petit que c / result: 2.25000e+02 / a est plus petit que b et b est plus petit que c / result: 2.25000e+02 / a est plus petit que b et b est plus petit que c / result: 2.25000e+02 / a est plus petit que b et b est plus petit que c / result: 2.25000e+02 / a est plus petit que b et b est plus petit que c / result: 2.25000e+02 / a est plus petit que b et b est plus petit que c / result: 2.25000e+02 / a est plus petit que b et b est plus petit que c / result: 2.25000e+02 / a est plus petit que b et b est plus petit que c / result: 2.25000e+02 / a est plus petit que b et b est plus petit que c / result: 2.25000e+02 / a est plus petit que b et b est plus petit que c / result: 2.25000e+02 / result: 5.00000e-01 / result int division then float conversion 0.00000e+00result: 5.00000e-01 / result int division then float conversion 0.00000e+00result: 5.00000e-01 / result int division then float conversion 0.00000e+00result: 5.00000e-01 / result int division then float conversion 0.00000e+00result: 5.00000e-01 / result int division then float conversion 0.00000e+00
+// Historique:
+//    cree le 14/01/2023
+
+{
+    float a = 5;
+    int aInt = 5;
+    int b = 10;
+    int c = 15;
+    int i = 0;
+    int j = 0;
+    float result;
+    float floor_Result;
+    
+    while (i < 10) {
+        if ((a < b) && (b < c)) {
+            print("a est plus petit que b et b est plus petit que c");
+        } else if ((a > b) || (b > c)) {
+            print("a est plus grand que b ou b est plus grand que c");
+        } else {
+            print("a n'est ni plus petit ni plus grand que b et b n'est ni plus petit ni plus grand que c");
+        }
+        print(" / ");
+        result = (a + b) * c;
+        print("result: ", result);
+        print(" / ");
+        i = i + 1;
+    }
+
+    while (j < 5) {
+        result = a / b; //0.5
+        floor_Result = aInt / b; //0
+        print("result: ", result);
+        print(" / ");
+        print("result int division then float conversion ", floor_Result);
+        j = j + 1;
+    }
+
+}

@@ -1,0 +1,22 @@
+/// Description:
+// 	  Test for the contextual error thrown when an override method doesn't have the right signature (not the same type of parameter, here)
+// 	
+// Resultats:
+// 	  INVALID_METHOD_SIGNATURE_OVERRIDE: Override method asmMethod in class SecondClass doesn't have the same signature as in one of its superclasses
+//    line 20
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {}
+
+class Class extends A {
+    float x = 4;
+    A asmMethod(float b)
+        asm("hehoooooooooooooo");
+} 
+
+class SecondClass extends Class {
+    float x = 4 + 8 - 43*340534508;
+    SecondClass asmMethod(int a)
+        asm("invalid override");
+}

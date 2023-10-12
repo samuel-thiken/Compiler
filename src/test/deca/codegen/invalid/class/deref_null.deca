@@ -1,0 +1,19 @@
+// Description:
+// 	  Déréférencement de null
+// 	
+// Resultats:
+// 	  Déréférencement de null  
+//    line 18
+// Historique:
+// 	  cree le /01/2023
+class Point3 {
+    float x;
+    float y;
+    float z;
+}
+
+{
+    Point3 p1;
+    Point3 p2;
+    p2.y = 1.0e-5;
+}

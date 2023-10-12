@@ -1,0 +1,20 @@
+/// Description:
+// 	  Error : two definitions for the same method
+//
+// Resultats:
+// 	  INVALID_METHOD_NAME: A method cannot have the same name as an existing field or method in the same class
+//    line 17
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    int x;
+    int my_method() {
+        float blabla = 5864.456;
+    }
+    float y;
+
+    float my_method() {
+
+    }
+}

@@ -1,0 +1,25 @@
+#! /bin/bash
+
+DECAC_HOME=$(cd "$(dirname "$0")"/../../../../ && pwd)
+OUTPUT="$DECAC_HOME"/src/test/script/output
+
+if [[ -d "$OUTPUT/token/" ]]; then
+    rm -r "$OUTPUT/token/"
+fi
+if [[ -d "$OUTPUT/syntax/" ]]; then
+    rm -r "$OUTPUT/syntax/"
+fi
+if [[ -d "$OUTPUT/context/" ]]; then
+    rm -r "$OUTPUT/context/"
+fi
+if [[ -d "$OUTPUT/codegen/" ]]; then
+    rm -r "$OUTPUT/codegen/"
+fi
+if [[ -d "$OUTPUT/ima/" ]]; then
+    rm -r "$OUTPUT/ima/"
+fi
+if [[ -d "$OUTPUT/compile/" ]]; then 
+    rm -r "$OUTPUT/compile/"
+fi
+
+echo "output directory cleaned !"

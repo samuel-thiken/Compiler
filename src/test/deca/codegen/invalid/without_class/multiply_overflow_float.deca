@@ -1,0 +1,12 @@
+// Description:
+// 	  Teste l'overflow pour la multiplication entre deux floats
+//
+// Resultats:
+//  Number overflow
+//  line 11
+// Historique:
+// 	  cree le /01/2023
+{
+    float x = 3.402823466e+38;
+    float z = x * x;
+}

@@ -1,0 +1,13 @@
+// Description:
+// 	  Bad decalaration of array (index has not type int)
+// Resultats:
+// 	  INCOMPATIBLE_TYPE_WITH_INT: Cannot declare an array's size with type float, the type need to be int
+//    line 12
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int a = 12;
+    float b = 1.0;
+    boolean[a + b] tab;
+}

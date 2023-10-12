@@ -1,0 +1,11 @@
+// Description:
+// 	  Test d'utilisation d'un type non défini
+// 	
+// Resultats:
+// 	  UNDEFINED_TYPE: Type B is undefined
+//  line 10
+// Historique:
+// 	  cree le 19/01/2023
+class A {
+    B b;
+}

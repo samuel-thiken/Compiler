@@ -1,0 +1,14 @@
+// Description:
+// 	  Array's equality with array with the same dimensions
+// Resultats:
+// 	  INCOMPATIBLE_TYPE_OPERATOR: Type int\[\] is incompatible with type int\[\] for the operator ==
+//    line 12
+// Historique:
+// 	  cree le /01/2023
+
+{
+    int[3] A = {3, 2, 1};
+    int[3] B = {1, 2, 3};
+    boolean test1 = A == B;
+    boolean test2 = A == A;
+}

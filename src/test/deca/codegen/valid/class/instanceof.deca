@@ -1,0 +1,18 @@
+// Description:
+//    test comparison with instanceof
+//
+// Result:
+//    Ok
+//
+// Historique:
+//    cree le 14/01/2023
+
+class A {}
+
+{
+    A element = new A();
+
+    if(element instanceof A) {
+        print("It works");
+    }
+}

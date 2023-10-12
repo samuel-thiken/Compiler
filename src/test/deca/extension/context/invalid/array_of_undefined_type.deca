@@ -1,0 +1,11 @@
+// Description:
+// 	  Declaration of array with an undefined type
+// Resultats:
+// 	  UNDEFINED_TYPE: Type string is undefined
+//    line 10
+// Historique:
+// 	  cree le /01/2023
+
+{
+    string[5] tab = {"Paul", "Hélène", "Samuel", "Ryan", "Bruno"};
+}

@@ -1,0 +1,22 @@
+/// Description:
+// 	  Cast inside an assign instruction
+// 	
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 17/01/2023
+class A {
+    void f() {}
+}
+class B extends A {
+    protected int x;
+    void f() {
+        this.x = 3;
+    }
+}
+
+{
+    B obj1 = new B();
+    A obj2 = new A();
+    obj2 = (A) (obj1);
+}

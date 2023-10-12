@@ -1,0 +1,16 @@
+// Description:
+// 	  Create object of a class that is not defined 
+//
+// Resultats:
+// 	UNDEFINED_TYPE: Type B is undefined
+//  line 15
+// Historique:
+// 	  cree le 15/01/2023
+
+class A {
+
+}
+
+{
+    A objectA = new B();
+}

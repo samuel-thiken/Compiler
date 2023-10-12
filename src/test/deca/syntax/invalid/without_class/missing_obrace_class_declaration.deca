@@ -1,0 +1,19 @@
+// Description:
+//    Program with missing obrace 
+//
+// Result:
+//    Syntax Error
+//    line 10
+
+
+class A 
+    protected int x;
+
+    public void increment() {
+        x = x + 1;
+    }  
+}
+
+{
+    A a = new A();
+}

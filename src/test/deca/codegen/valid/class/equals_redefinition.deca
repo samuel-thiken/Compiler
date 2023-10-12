@@ -1,0 +1,30 @@
+// Description:
+// 	  Redéfinition de la méthode equals
+// 	
+// Resultats:
+// 	  Oui
+// Historique:
+// 	  cree le /01/2023
+class Point3 {
+    
+    float x;
+    float y;
+    float z;
+
+    boolean equals(Point3 p) {
+        return ((p.x - x)*(p.x - x) + (p.y - y)*(p.y - y) + (p.z - z)*(p.z - z) <= 1.0e-8);
+    }
+
+}
+
+{
+    Point3 p1 = new Point3();
+    Point3 p2 = new Point3();
+    p2.y = 1.0e-5;
+
+    if(p1.equals(p2)) {
+        println("Oui");
+    } else {
+        println("Problème");
+    }
+}

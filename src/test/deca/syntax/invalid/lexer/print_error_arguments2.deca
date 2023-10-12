@@ -1,0 +1,10 @@
+// Description:
+//    error in argument of print function
+//
+// Result:
+//     token recognition error at: '''
+//     line 9
+
+{
+    print('Hello World !');
+}

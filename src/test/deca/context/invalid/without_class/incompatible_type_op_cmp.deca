@@ -1,0 +1,11 @@
+// Description:
+//    Error : operator comparison not defined with type string
+//
+// Result:
+//    INCOMPATIBLE_TYPE_OPERATOR: Type \(.\)\+ is incompatible with type \(.\)\+ for the operator \(.\)\+
+//    line 10
+
+{
+    int a = 1;
+    boolean result = a >= "Hello"; 
+}

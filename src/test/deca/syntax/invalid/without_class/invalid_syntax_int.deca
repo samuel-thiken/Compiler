@@ -1,0 +1,9 @@
+// Description:
+//    Error syntax for int initialization  	  
+//
+// Resultats:
+//    Syntax Error
+//    line 8
+{
+    int entry = 04;
+}

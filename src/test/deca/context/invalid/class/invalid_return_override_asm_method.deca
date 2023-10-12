@@ -1,0 +1,22 @@
+/// Description:
+// 	  Test for the contextual error thrown when an override method doesn't return a subtype of the type in the inherited method
+// 	
+// Resultats:
+// 	  NOT_A_SUBTYPE_RETURN: The return type of method asmMethod in class SecondClass must be the same type or a subtype of type Class
+//    line 20
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {}
+
+class Class extends A {
+    boolean x = true && false || ((0 != 1) && (1 > 38));
+    Class asmMethod()
+        asm("hehoooooooooooooo");
+} 
+
+class SecondClass extends Class {
+    boolean x = (1+549 - 3.0f) > 4.0f;
+    A asmMethod()
+        asm("valid override");
+}

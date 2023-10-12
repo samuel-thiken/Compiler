@@ -1,0 +1,16 @@
+/// Description:
+// 	  Error : two definitions for the same field
+//
+// Resultats:
+// 	  ALREADY_DEFINED_FIELD: Field x is already defined
+//    line 15
+// Historique:
+// 	  cree le 18/01/2023
+
+class A {
+    int x;
+    int my_method() {
+        float blabla = 5864.456;
+    }
+    float x;
+}

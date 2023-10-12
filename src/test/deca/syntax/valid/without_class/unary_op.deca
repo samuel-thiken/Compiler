@@ -1,0 +1,12 @@
+/// Description:
+// 	  test syntax unary operators
+//
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le 14/01/2023
+{
+    boolean b = !!!!!!!!!true;
+    float f = --------1;
+    
+}

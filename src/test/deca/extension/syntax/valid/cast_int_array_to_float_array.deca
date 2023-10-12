@@ -1,0 +1,13 @@
+// Description:
+// 	  Cast int array to float array
+// Resultats:
+// 	  ok
+// Historique:
+// 	  cree le /01/2023
+
+{
+    float[2] A = {1, 2};
+    bool[3][2] B = {{1, 1}, {0, 0}, {1, 0}};
+    int[4] C;
+    C = {1.0, 0.0, 7.0, 9.0};
+}

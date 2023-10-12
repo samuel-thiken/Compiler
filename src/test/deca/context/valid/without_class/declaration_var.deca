@@ -1,0 +1,13 @@
+// Description:
+//    Teste tous les types de déclarations de variables
+//
+// Result:
+//    
+//
+// Historique:
+//    cree le 07/01/2023
+{
+    int my_int_1, my_int_2;
+    float my_float_38;
+    boolean my_bool; 
+}
